@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 익스로 열어도 엣지로 보여줘 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 컨텐츠의 너비를 화면의 폭에 맞춰, 컨텐츠 크기를 100%로 보여줘 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="../protject1/favicon/">
+    <link rel="apple-touch-icon" sizes="60x60" href="../protject1/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../protject1/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../protject1/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../protject1/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../protject1/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../protject1/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../protject1/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../protject1/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../protject1/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../protject1/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../protject1/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../protject1/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../protject1/favicon/manifest.json">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+
+    <title>인터뷰/메시지 게시판목록 | 국민건강보험</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="skip">
+			<a href="#wrap" rel="bookmark">본문 바로가기</a>
+			<a href="#nav" rel="bookmark">주메뉴 바로가기</a>
+			<a href="#background" rel="bookmark">메인메뉴바로가기</a>
+			<a href="#footer" rel="bookmark"> 국민건강보험공단정보 바로가기</a>
+		</div>
+        <div class="header">
+            <div class="header-top">
+                <div class="inner cf">
+                    <div class="web-acc fl">
+                        <span class="zoom fl">
+                            <em>화면</em>
+                            <button type="button" class="zoom-in"><span>화면확대</span></button>
+                            <button type="button" class="zoom-out"><span>화면축소</span></button>
+                        </span>
+
+                        <span class="sound fr">
+                            <em>소리</em>
+                            <button type="button" class="sound-up"><span>소리크게</span></button>
+                            <button type="button" class="sound-down"><span>소리작게</span></button>
+                            <button type="button" class="sound-i"><span>소리키고끄기</span></button>
+                        </span>
+                    </div>
+                    <div class="user-set fr">
+                        <ul class="cf">
+                            <li class="fl"><a href="./index.html">로그인</a></li>
+                            <li class="fl"><a href="./index.html">회원가입</a></li>
+                            <li class="fl"><a href="./index.html">인증서안내</a></li>
+                            <li class="fl"><a href="./index.html">전체메뉴</a></li>
+                            <li class="language fl">
+								<div class="btn"><button type="button" class="toggle">Language</button></div>
+								<div class="box-header">
+									<ul class="language-list">
+										<li><a href="./index.html">English</a></li>
+										<li><a href="./index.html">中文</a></li>
+										<li><a href="./index.html">日本</a></li>
+										<li><a href="./index.html">Tiếng Việt</a></li>
+									</ul>
+								</div>
+								<script>
+									const box=document.querySelector('div.btn');
+								   
+									const panel=document.querySelector('div.box-header');
+									box.addEventListener('click',()=>{
+										box.classList.toggle('on');
+										panel.classList.add('active')
+									})
+								</script>
+							</li>
+							<li class="fl l-list ">
+								<div class="btn2"><button type="button" class="red ">분야별업무사이트</button></div>
+								<div class="box-header2">
+									<ul class="site-list cf">
+										<li class="fl"><a href="./index.html">
+												사회보험
+												<br />
+												통합징수 포털
+											</a></li>
+										<li class="fl"><a href="./index.html">
+												노인장기
+												<br />
+												요양보험
+											</a></li>
+										<li class="fl"><a href="./index.html">
+												요양기관
+												<br />
+												정보마당
+											</a></li>
+										<li class="fl"><a href="./index.html">
+												EDI
+												<br />
+												서비스
+											</a></li>
+										<li class="fl"><a href="./index.html">
+												건강검진
+												<br />
+												기관포털
+											</a></li>
+										<li class="fl"><a href="./index.html">
+												건강보험자료
+												<br />
+												공유서비스
+											</a></li>
+
+									</ul>
+								</div>
+								<script>
+									const box2=document.querySelector('div.btn2');
+								   
+									const panel2=document.querySelector('div.box-header2');
+									box2.addEventListener('click',()=>{
+										box2.classList.toggle('on');
+										panel2.classList.add('active')
+									})
+								</script>
+							</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="gnb-nav">
+                    <div id="nav" >
+                        <div class="width100">
+                            <div class="inner cf">
+                                <h1 class="logo fl"><a href="../index.html"><img src="../img/logo.png"
+                                            alt="건강보험공단사이트로 이동합니다."></a></h1>
+                                <ul class="gnb fl">
+                                    <li class="fl">
+                                        <a href="./index.html" class="br">민원여기요</a>
+                                        <ul class="depth2">
+                                            <li><a href="./index.html">민원안내</a></li>
+                                            <li><a href="./index.html">개인민원</a></li>
+                                            <li><a href="./index.html">사업장민원</a></li>
+                                            <li><a href="./index.html">상담문의</a></li>
+                                            <li><a href="./index.html">신고센터</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="./index.html" class="br">건강iN</a>
+                                        <ul class="depth2">
+                                            <li><a href="./index.html">나의건강관리</a></li>
+                                            <li><a href="./index.html">가족건강관리</a></li>
+                                            <li><a href="./index.html">건강프로그램</a></li>
+                                            <li><a href="./index.html">건강생활</a></li>
+                                            <li><a href="./index.html">건강자료실</a></li>
+                                            <li><a href="./index.html">검진기관/병원찾기</a></li>
+                                            <li>
+                                                <a href="./index.html">
+                                                    국민건강알람
+                                                    <i class="ico-link2"> </i>
+                                                </a>
+                                            </li>
+                                            <li><a href="./index.html">건강생활실천지원금제</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="../index.html" class="br">정책센터</a>
+                                        <ul class="depth2">
+                                            <li><a href="./index.html">국민건강보험</a></li>
+                                            <li><a href="./index.html">노인장기요양보험
+                                                    <i class="ico-link2"> </i>
+                                                </a></li>
+                                            <li><a href="./index.html">정책홍보관</a></li>
+                                            <li><a href="./index.html">사회보험통합징수</a></li>
+                                            <li><a href="./index.html">권리구제제도</a></li>
+                                            <li><a href="./index.html">법령정보 건강Law
+                                                    <i class="ico-link2"> </i>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="./index.html" class="br">국민과함께</a>
+                                        <ul class="depth2">
+                                            <li><a href="./index.html">정보공개</a></li>
+                                            <li><a href="../index.html">경영공시
+                                                    <i class="ico-link2"> </i>
+                                                </a></li>
+                                            <li><a href="./index.html">국민참여</a></li>
+                                            <li><a href="./index.html">뉴스/소식</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fl">
+                                        <a href="./index.html" class="br">공단요모조모</a>
+                                        <ul class="depth2">
+                                            <li><a class="a-line" href="./index.html">공단소개</a></li>
+                                            <li><a href="./index.html">조직 및 인원</a></li>
+                                            <li><a href="./index.html">홍보센터</a></li>
+                                            <li><a href="./index.html">경영철학</a></li>
+                                            <li><a href="./index.html">사회공헌</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="user-support fl">
+                                    <button class="sub-search" type="button"></button>
+                                    <button class="all-manu" type="button"></button>
+                                </div>
+                                <div class="favorite-menu fl">
+                                    <dl class="cf">
+                                        <dt class="fl">자주 찾는 메뉴</dt>
+                                        <dd class="fl">
+                                            <ul class="cf">
+                                                <li class="fl"><a href="./index.html">건강보험제도 유형</a></li>
+                                                <li class="fl"><a href="./index.html">자격취득/가입</a></li>
+                                                <li class="fl"><a href="./index.html">진료 및 투약정보</a></li>
+                                                <li class="fl"><a href="./index.html">검진대상조회</a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs" data-cms-content="/nhis/_content/menu-depth-info">
+
+
+
+
+
+            <ul class="fr">
+                <li class="home">HOME</li>
+
+                <li>
+                    <a href="#" id="menu-6" class="active">공단요모조모</a>
+                </li>
+
+                <li>
+                    <a href="#" id="menu-27" class="active">공단소개</a>
+                </li>
+
+                <li>
+                    <a href="#" id="menu-127" class="active">이사장</a>
+                </li>
+
+
+
+                <li>
+                    인터뷰/메시지
+                </li>
+
+            </ul>
+
+
+        </div>
+        <div id="main-wrap ">
+            <div class="inner cf ">
+                <div class="section-left fl" >
+                    <h2>공단소개</h2>
+                    <div id="cms-lnb" class="font_reset">
+                        <ul>
+                            <li class="on">
+                                <a href="#" class="font-red">이사장</a>
+                                <ul>
+                                    <li class="">
+                                        <a href="#" class="a-hover" title="이사장 인사말">이사장
+                                            인사말</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="a-hover" title="현장/갤러리">현장/갤러리</a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="#">인터뷰/메시지</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="a-hover" title="역대 이사장">역대 이사장</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="">
+                                <a href="#" title="비전 및 핵심가치">비전 및 핵심가치</a>
+
+                            </li>
+                            <li class="">
+                                <a href="#" title="경영전략">경영전략</a>
+
+                            <li class="">
+                                <a href="#" title="상징">상징</a>
+
+                            </li>
+                            <li class="">
+                                <a href="#" title="이사회">이사회</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-contents pr fl">
+                    <div class="top cf" >
+                        <h2 class="fl" >인터뷰/메세지</h2>
+                        <div class="utililty fr">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="iconset ico-print"></i>
+                                    </a>
+                                    <span>프린터</span>
+                                </li>
+                                <li><a href="">
+                                        <i class="iconset ico-share"></i>
+                                    </a>
+                                    <span>공유</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="search_wrap" class="cf">
+                        <form action="#" id="search_form" class="cf">
+                            <fieldset class="l">
+                                <label>총 120건 (1/12 페이지)
+                                    <select name="search">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                </label>
+                                <button type="submit">적용</button>
+                            </fieldset>
+                            <fieldset class="r">
+                                <select name="search" class="fl">
+                                    <option value="제목">전체</option>
+                                    <option value="제목">제목</option>
+                                    <option value="내용">내용</option>
+                                    <option value="작성자">제목+내용</option>
+                                </select>
+                                <input type="text" name="text" class="fl" placeholder="  검색어를 입력해 주세요">
+                                <button type="submit">검색</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div id="board_wrap" >
+                        <div class="first cf">
+                            <div class="fl "><span>번호</span></div>
+                            <div class="fl title line"><span>제목</span></div>
+                            <div class="fl title2"><span>담당부서</span></div>
+                            <div class="fl title3 line"><span>등록일</span></div>
+                            <div class="fl title4 line2"><span>첨부</span></div>
+                            <div class="fl"><span>조회수</span></div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click120" name="board">
+                            <div class="fl">120</div>
+                            <div class="fl title left line"><label for="click120">[인터뷰] "보건노조 사태는 정부대응 늦은 탓...국가 책임 회피 안
+                                    돼"
+                                    (국민일보,
+                                    2021.9.2.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2021.09.02</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">492</div>
+                            <div class="content_wrap">
+                                <div class="subject">[인터뷰]"보건노조 사태는 정부대응 늦은 탓...국가 책임 회피 안 돼" (국민일보, 2021.9.2.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2021.09.02•조회수:490</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2021년 9월 2일(목) &lt;국민일보&gt;</li>
+                                            <li>▣ 제목 : "보건노조 사태는 정부대응 늦은 탓...국가 책임 회피 안 돼"</li>
+                                            <li>&lt;기사보기&gt;</li>
+                                            <li><a
+                                                    href="http://news.kmib.co.kr/article/view.asp?arcid=0924207644&code=11132000&cp=nv">http://news.kmib.co.kr/article/view.asp?arcid=0924207644&code=11132000&cp=nv</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click119" name="board">
+                            <div class="fl">119</div>
+                            <div class="fl title left line"><label for="click119">[인터뷰] "부자 나라의 가난한 정부... 언제까지 돈이 없다고 할
+                                    건가"(오마이뉴스,
+                                    2021.3.10.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2021.03.10</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">1594</div>
+                            <div class="content_wrap">
+                                <div class="subject">[인터뷰] "부자 나라의 가난한 정부... 언제까지 돈이 없다고 할 건가"(오마이뉴스, 2021.3.10.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2021.03.10•조회수:1595</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2021년 3월 10일(수) &lt;오마이뉴스&gt;</li>
+                                            <li>▣ 제목 : "부자 나라의 가난한 정부... 언제까지 돈이 없다고 할 건가"</li>
+                                            <li>&lt;기사보기&gt;</li>
+                                            <li><a
+                                                    href="http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002725457">http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002725457</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click118" name="board">
+                            <div class="fl">118</div>
+                            <div class="fl title left line"><label for="click118">[인터뷰] "공공병원 확충에 건강보험 미래 달렸다" (내일신문,
+                                    2021.2.25.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2021.02.25</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">806</div>
+                            <div class="content_wrap">
+                                <div class="subject le">[인터뷰] "공공병원 확충에 건강보험 미래 달렸다" (내일신문, 2021.2.25.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2021.02.25•조회수:807</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2021년 2월 25일(목) &lt;내일신문&gt;</li>
+                                            <li>▣ 제목 : "공공병원 확충에 건강보험 미래 달렸다"</li>
+                                            <li>&lt;기사보기&gt;</li>
+                                            <li><a
+                                                    href="http://www.naeil.com/news_view/?id_art=377964">http://www.naeil.com/news_view/?id_art=377964</a>
+                                            </li>
+                                            <li><a
+                                                    href="http://www.naeil.com/news_view/?id_art=377966">http://www.naeil.com/news_view/?id_art=377966</a>
+                                            </li>
+                                            <li><a
+                                                    href="http://www.naeil.com/news_view/?id_art=377967">http://www.naeil.com/news_view/?id_art=377967</a>
+                                            </li>
+                                            <li><a
+                                                    href="http://www.naeil.com/news_view/?id_art=377965">http://www.naeil.com/news_view/?id_art=377965</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click117" name="board">
+                            <div class="fl">117</div>
+                            <div class="fl title left line"><label for="click117">[칼럼] '코로나19 한국 공공병원 확대는 금지된 정책인가?'
+                                    (2021.1.6,
+                                    한겨레)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2021.01.06</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">538</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[칼럼] '코로나19 한국 공공병원 확대는 금지된 정책인가?' (2021.1.6, 한겨레)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2021.01.06•조회수:538</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2021년 1월 6일(수) &lt;한겨레&gt;</li>
+                                            <li>▣ 제목 : '코로나19 한국 공공병원 확대는 금지된 정책인가?'</li>
+                                            <li>&lt;기사보기&gt;</li>
+                                            <li><a
+                                                    href="http://www.hani.co.kr/arti/economy/economy_general/977470.html">http://www.hani.co.kr/arti/economy/economy_general/977470.html</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click116" name="board">
+                            <div class="fl">116</div>
+                            <div class="fl title left line"><label for="click116">[인터뷰]'모두'를 위한 공공병원 '국가'가 나서면 된다(시사IN,
+                                    2020.12.14.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2020.12.14</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">356</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[인터뷰]'모두'를 위한 공공병원 '국가'가 나서면 된다(시사IN, 2020.12.14.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2021.01.06•조회수:538</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 일시 : 2020년 12월 14일 (월)</li>
+                                            <li>매체 : 시사IN(제691호)</li>
+                                            <li>▣ 제목 : '모두'를 위한 공공병원 '국가'가 나서면 된다</li>
+                                            <li>▣ 내용<br />
+                                                “좋은 의료란 표준 진료를 하는 것, 공공의료기관 비중이 높아야 표준진료로 시장에 영향력 확보 가능”<br />
+                                                “문재인 케어와 공공의료는 양자간 주고받는 역할”<br />
+                                                “공공병원 설립과 운영을 지원해주는 조직 있어야”</li>
+                                            <li>&lt;기사보기&gt;</li>
+                                            <li><a
+                                                    href="https://www.sisain.co.kr/news/articleView.html?idxno=43375">https://www.sisain.co.kr/news/articleView.html?idxno=43375</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click115" name="board">
+                            <div class="fl">115</div>
+                            <div class="fl title left line"><label for="click115">[인터뷰]김용익 "어려울수록 건보가 튼튼해야...보험료율 3.2%
+                                    인상
+                                    필요"(연합뉴스,
+                                    2020.8.23.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2020.08.24</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">1160</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[인터뷰]김용익 "어려울수록 건보가 튼튼해야...보험료율 3.2% 인상 필요"(연합뉴스, 2020.8.23.)
+                                </div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2021.08.24•조회수:1161</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 일시 : 2020년 8월 23일 (일)</li>
+                                            <li>▣ 매체 : 연합뉴스</li>
+                                            <li>▣ 제목 : 김용익 "어려울수록 건보가 튼튼해야...보험료율 3.2% 인상 필요"</li>
+                                            <li>▣ 내용<br />
+                                                “건보 재정은 전국민의 저축...적립금 10조 유지해야 위기대응 가능”<br />
+                                                “의사증원 필요...수도권-개원의 편중 해소 위해 의료계와 협의해야”<br />
+                                                “공공병원 시장 점유율 높아지면 ‘적정진료’ 보편화 될 것”
+                                            </li>
+                                            <li>&lt;기사보기&gt;</li>
+                                            <li><a
+                                                    href="https://www.sisain.co.kr/news/articleView.html?idxno=43375">https://www.sisain.co.kr/news/articleView.html?idxno=43375</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click114" name="board">
+                            <div class="fl">114</div>
+                            <div class="fl title left line"><label for="click114">[인터뷰] “코로나19가 바꾼 세상 어떻게 준비할 것인가?” (KBS
+                                    아침마당,
+                                    2020.7.9.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2020.07.09</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">726</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[인터뷰] “코로나19가 바꾼 세상 어떻게 준비할 것인가?” (KBS 아침마당, 2020.7.9.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2020.07.09•조회수:726</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2020년 7월 9일 (목) &lt;아침마당&gt;</li>
+                                            <li>▣ 제목 : "코로나19가 바꾼 세상 어떻게 준비할 것인가?"</li>
+                                            <li>▣ 내용<br />
+                                                - 국민건강보험공단 김용익 이사장, 오상국 동국대학교 가정의학과 교수, 박광식 KBS 의학전문기자, 연기자 이주실, 가수 장미화
+                                                등의
+                                                패널들과
+                                                함께 논하는 코로나19 이후의 세상과 K-방역의 성과 및 그 속에서의 건강보험의 역할과 가치<br />
+                                                1) 코로나19가 바꾼 세상 풍경<br />
+                                                2) 코로나19, 달라진 한국의 위상
+                                            </li>
+                                            <li>&lt;영상 보기&gt;</li>
+                                            <li><a
+                                                    href="http://vod.kbs.co.kr/index.html?source=episode&sname=vod&stype=vod&program_code=T2000-0032&program_id=PS-2020096382-01-000">http://vod.kbs.co.kr/index.html?source=episode&sname=vod&stype=vod&program_code=T2000-0032&program_id=PS-2020096382-01-000</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click113" name="board">
+                            <div class="fl">113</div>
+                            <div class="fl title left line"><label for="click113">[인터뷰] “건강보험 적용항목 늘어나면, 착한 적자 자연스럽게
+                                    없어져”
+                                    (한겨레신문
+                                    2020.6.26)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2020.06.26</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">698</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[인터뷰] “건강보험 적용항목 늘어나면, 착한 적자 자연스럽게 없어져” (한겨레신문 2020.6.26)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2020.06.26•조회수:698</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2020년 6월 26일 (금) &lt;한겨레&gt;</li>
+                                            <li>▣ 제목 : “건강보험 적용항목 늘어나면, 착한 적자 자연스럽게 없어져”</li>
+                                            <li>▣ 내용<br />
+                                                - "도로 10km 건설에 2500억 쓰는데... 공공병원도 SOC, 국가가 확충 마땅"<br />
+                                                ▷ "비급여 진료항목을 대폭 줄이는 '문재인 케어'가 완성되면, 공공병원 적자도 자연스럽게 줄어든다. 공공병원이든, 민간병원이든
+                                                건강보험
+                                                하나로
+                                                운영할 수 있게 되기 때문이다."
+                                            </li>
+                                            <li>&lt;기사 보기&gt;</li>
+                                            <li><a
+                                                    href="http://www.hani.co.kr/arti/society/health/951022.html">http://www.hani.co.kr/arti/society/health/951022.html</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click112" name="board">
+                            <div class="fl">112</div>
+                            <div class="fl title left line"><label for="click112">[인터뷰] “동네의원 원격진료땐… 종합병원 환자분산 건보재정 윈윈”
+                                    (매일경제
+                                    2020.6.17.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2020.06.17</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">425</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[인터뷰] “동네의원 원격진료땐… 종합병원 환자분산 건보재정 윈윈” (매일경제 2020.6.17.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2020.06.17•조회수:425</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2020년 6월 17일 (수) &lt;매일경제&gt;</li>
+                                            <li>▣ 제목 : ① “동네의원 원격진료땐… 종합병원 환자분산·건보재정 윈윈”<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;②
+                                                “기본소득, 갈길 먼 이야기 … 사회보장부터 두텁게 해야”</li>
+                                            <li>▣ 내용<br />
+                                                - ‘원격의료 도입론’ 가세한 김용익 건보공단 이사장<br />
+                                                ▷ 고혈압 등 만성질환자에 한해 1차 병원서만 재진·처방토록<br /> ▷ 보건의료 관점으로 전환 필요<br />
+                                                ▷ 경제 어려울수록 건보 더 중요... 文케어는 차질없이 추진할 것
+                                            </li>
+                                            <li>&lt;기사 보기&gt;</li>
+                                            <li><a
+                                                    href="https://www.mk.co.kr/news/economy/view/2020/06/617583/">https://www.mk.co.kr/news/economy/view/2020/06/617583/</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cf contents">
+                            <input type="radio" id="click111" name="board">
+                            <div class="fl">111</div>
+                            <div class="fl title left line"><label for="click111">[인터뷰] 포스트코로나19 : 달라지는 미래 (KBS 시사기획 창,
+                                    2020.5.30.)</label></div>
+                            <div class="fl title2">국민소통실</div>
+                            <div class="fl title3 line">2020.06.03</div>
+                            <div class="fl title4 line2"> </div>
+                            <div class="fl ">467</div>
+                            <div class="content_wrap">
+                                <div class="subject ">[인터뷰] 포스트코로나19 : 달라지는 미래 (KBS 시사기획 창, 2020.5.30.)</div>
+                                <div class="notice-board">
+                                    <div class="content1">
+                                        <ul class="cf">
+                                            <li>담당부서</li>
+                                            <li class="w">국민소통실</li>
+                                            <li class="w2">등록일:2020.06.03•조회수:467</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content2">
+                                        <ul>
+                                            <li>▣ 매체 : 2020년 5월 30일 (토)</li>
+                                            <li>▣ 제목 : 포스트코로나19 : 달라지는 미래<br />
+                                            </li>
+                                            <li>▣ 내용<br />
+                                                - K-방역의 성과와 한국의 성취, 앞으로 한국 사회가 어디로 가야할 지에 대한 마이클 샌델 미 하버드 대 교수, 프랑스 최고
+                                                석학 자크
+                                                아탈리, 노동의 종말로 유명한 제레미 리프킨 등 다양한 분야의 세계 석학들의 인터뷰<br />
+                                                - <strong>'세계 석학들도 칭찬한 K-방역, 그 속에서 빛난 건강보험의 가치'</strong>에 대한 국민건강보험공단
+                                                이사장
+                                                인터뷰(13:57~20:05)
+                                            </li>
+                                            <li>&lt;영상 보기&gt;</li>
+                                            <li><a
+                                                    href="https://vod.kbs.co.kr/index.html?source=episode&sname=vod&stype=vod&program_code=T2011-1097&program_id=PS-2020083698-01-000&section_code=05&broadcast_complete_yn=N&local_station_code=00">"https://vod.kbs.co.kr/index.html?source=episode&amp;sname=vod&amp;stype=vod&amp;program_code=T2011-1097&amp;program_id=PS-2020083698-01-000&amp;section_code=05&amp;broadcast_complete_yn=N&amp;local_station_code=00"</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pager_wrap">
+                            <div class="in cf">
+                                <div class="page fl">
+                                    <strong>1</strong>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">7</a>
+                                    <a href="#">8</a>
+                                    <a href="#">9</a>
+                                    <a href="#">10</a>
+
+                                </div>
+                                <a href="#" class="next fl"><span>다음페이지</span></a>
+                                <a href="#" class="hide fl"><span>마지막페이지</span></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="survey-area" >
+                        <div class="part"><span class="tit">담당부서</span>
+                            <p>부서명<strong>국민소통실</strong></p>
+
+                        </div>
+
+                        <div class="part viewer font_reset"><span class="tit">뷰어다운</span>
+                            <p><a href="#" ><i class="iconset ico-hwp"></i>한글뷰어</a></p>
+                            <p><a href="#" ><i class="iconset ico-acro"></i>아크로뱃뷰어</a></p>
+                        </div>
+                        <div class="survey font_reset"><span class="tit">만족도</span>
+                            <p class="txt">페이지의 내용이나 사용편의성에 대해 만족하십니까?</p>
+                            <ul class="thumb-choose  cf">
+                                <li class="fl"><span class="bg-chk">
+                                        <input type="radio" id="choice01" name="appraisal" value="5">
+                                        <label for="choice01">매우만족</label></span></li>
+                                <li class="fl"><span class="bg-chk">
+                                        <input type="radio" id="choice02" name="appraisal" value="4">
+                                        <label for="choice02">만족</label></span></li>
+                                <li class="fl"><span class="bg-chk">
+                                        <input type="radio" id="choice03" name="appraisal" value="3">
+                                        <label for="choice03">보통</label></span></li>
+                                <li class="fl"><span class="bg-chk">
+                                        <input type="radio" id="choice04" name="appraisal" value="2">
+                                        <label for="choice04">불만족</label></span></li>
+                                <li class="fl"><span class="bg-chk">
+                                        <input type="radio" id="choice05" name="appraisal" value="1">
+                                        <label for="choice05">매우불만족</label></span></li>
+                            </ul>
+                            <div class="input-area">
+                                <input name="vcComment" type="text" class="input-text" title="의견 입력"
+                                    placeholder="    여러분의 소중한 의견을 보내주세요" value="">
+                                <button id="saveSurvey" class="button large navy" type="button">입력</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="inner">
+                    <div class="footer-nav cf">
+                        <ul class="nav-link fl">
+                            <li class="fl">
+                                <a href="./index.html">이용약관</a>
+                            </li>
+                            <li class="fl">
+                                <a href="./index.html">영상정보처리기기 운영지침</a>
+                            </li>
+                            <li class="fl">
+                                <strong><a href="./index.html">개인정보처리방침</a></strong>
+                            </li>
+                            <li class="fl">
+                                <a href="./index.html">온라인도우미</a>
+                            </li>
+                        </ul>
+                        <div class="family-link fr">
+                            <div class="family-site-area">
+                                
+                                            <div class="dropdown-content">
+                                              <a href="./index.html">노인장기요양보험</a>
+                                              <a href="./index.html">사회보험징수포털</a>
+                                              <a href="./index.html">요양기관정보마당 사이트</a>
+                                              <a href="./index.html">국민건강보험 EDI서비스</a>
+                                              <a href="./index.html">건강관리포털시스템</a>
+                                              <a href="../index.html">국가건강검진교육연수원</a>
+                                              <a href="./index.html">국민건강보험자료 공유서비스</a>
+                                              <a href="./index.html">국민건강보험공단 인재개발원</a>
+                                              <a href="./index.html">국민건강보험공단 전문도서관</a>
+                                              <a href="./index.html">국민건강보험공단 공단가족</a>
+                                            </div>
+                                             
+                                <p>
+                                    <button class="default" type="button">내부관련사이트</button>
+                                        
+                                </p>
+                                
+                                <div class="box-site">
+                                    
+                                </div><a class="btn-move" >이동</a>
+                            </div>
+                            <div class="family-site-area">
+                                <div class="dropdown-content scroll">
+                                    <a href="./index.html">서울요양원</a>
+                                    <a href="./index.html">일산병원</a>
+                                    <a href="./index.html">행정정보공동이용센터</a>
+                                    <a href="./index.html">국민연금</a>
+                                    <a href="./index.html">근로복지공단</a>
+                                    <a href="./index.html">보건복지부</a>
+                                    <a href="./index.html">국민권익위원회</a>
+                                    <a href="./index.html">인터넷 지로납부</a>
+                                    <a href="./index.html">건강보험심사평가원</a>
+                                    <a href="./index.html">정부24</a>
+                                    <a href="./index.html">대한민국 법원 전자가족관계</a>
+                                    <a href="./index.html">보건복지부 인터넷채팅상담</a>
+                                    <a href="./index.html">보건복지부 통계포털</a>
+                                    <a href="./index.html">한국사회보장정보원</a>
+                                    <a href="./index.html">고용보험 인터넷서비스</a>
+                                    <a href="./index.html">고용산재보험 토탈서비스</a>
+                                    <a href="./index.html">한국보건의료연구원</a>
+                                    <a href="./index.html">한국의료분쟁조정중재원</a>
+                                    <a href="./index.html">하이코리아</a>
+                                    <a href="./index.html">국민건강보험 동우회</a>
+                                    <a href="../index.html">4대사회보험 정보연계센터</a>
+                                    <a href="./index.html">행정안전부 국민재난안전포털</a>
+                                  </div>
+                                <p>
+                                    <button class="default" type="button">관련사이트</button>
+                                </p>
+                                <div class="box-site">
+        
+                                </div><a class="btn-move" >이동</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-sns-area cf ">
+                        <div class="footer-txt fl">
+                            <p>본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                            <p>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시 </p>
+                            <p>Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
+                        </div>
+                        <div class="footer-icon fr">
+                            <ul class="certification-list cf">
+                                <li class="fl">
+                                    <a href="./index.html">평생건강 With You</a>
+                                </li>
+                                <li class="fl">
+                                    <a href="./index.html">개인정보보호 우수 웹·시스템</a>
+                                </li>
+                                <li class="fl">
+                                    <a href="./index.html">정보보호 및 개인정보보호 관리체계(ISMS-P) 인증서 보기</a>
+                                </li>
+                                <li class="fl">
+                                    <a href="./index.html">(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)</a>
+                                </li>
+                            </ul>
+                            <ul class="sns-link cf">
+                                <li class="fl"><a class="naver" href="./index.html" >네이버 블로그</a></li>
+                                <li class="fl"><a class="daum" href="./index.html" >다음 블로그</a></li>
+                                <li class="fl"><a class="facebook" href="./index.html" >페이스북</a></li>
+                            <li class="fl"><a class="kakao" href="./index.html" >카카오스토리</a></li>
+                                <li class="fl"><a class="youtube" href="./index.html" >유튜브</a></li>
+                                <li class="fl"><a class="insta" href="./index.html" >인스타그램</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p><a id="back-to-top" href="#top" class="top">상단으로</a></p>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="../jq.js"></script>
+        </div>
+</body>
+
+</html>

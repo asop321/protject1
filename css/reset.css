@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+	src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') 
+	format('truetype');
+
+   }
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Nanum Gothic','NanumBarunGothic','Noto Sans KR', sans-serif;
+}
+button{
+	border: 0;
+}
+
+.inner {
+	width: 100%;
+	max-width: 1180px;
+	margin: auto;
+}
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
