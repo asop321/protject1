@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .main-wrap{
 	padding-top:20px;
 }
@@ -192,7 +193,7 @@
 	padding-left: 40px;
 	margin-top: 4px;
 }
-.main-banner{
+.slideWrap{
 	margin-top: 30px;
 	width: 100%;
 	height: 128px;
@@ -203,6 +204,7 @@
 .main-banner p{
 	text-align: center;
 	letter-spacing: -3px;
+    font-family: 'NanumBarunGothic';
 }
 .main-banner p.slogan{
 	font-size: 21px;
@@ -211,6 +213,9 @@
 .main-banner p.title{
 	font-size: 28px;
 	padding-top: 20px;
+}
+.banner-controls span{
+    background-image: none;
 }
 .banner-controls a{
 	width: 40px;
@@ -222,16 +227,25 @@
 	bottom: 40px;
 }
 
-.b-prev{
-	background: url(../img/arrow-slide-l.png) no-repeat center center;
-	left: 60px;
-}
-.b-next{
-	background: url(../img/arrow-slide-r.png) no-repeat center center;
-	right:60px;
 
+.text-controls .banner-controls span a{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    text-indent: -999999em;
 }
-
+.text-controls .banner-controls .text-next a{
+    background: url(../img/arrow-slide-r.png) no-repeat center center;
+    right: 30px;
+    bottom: 35px;
+}
+.text-controls .banner-controls .text-prev a{
+    background: url(../img/arrow-slide-l.png) no-repeat center center;
+    left: 25px;
+    bottom: 35px;
+}
 .hiwell-news-warp{
 	width: 1180px;
     margin: 0 auto;
@@ -451,34 +465,40 @@
 .pre {
     font-size: 15px;
 }
-.banner-zone{
+.event-banner-zone{
 	width: 29.8%;
 	height: 320px;
 	background-color: #fff;
     border: 1px solid #e1e3e6;
     padding: 33px 39px 0;
     border-radius: 20px 20px 55px 20px;
+    position: relative;
+
 }
-.banner-zone .banner-top{
-	position: relative;
-    top: -42px;
-    left: 150px;
-    padding-right: 82px;
+.event-banner-zone .bx-controls .bx-controls-direction{
+    position: absolute;
+    top:36px;
+    right: 50px;
 }
-.banner-zone span em{
-	font-weight: 700;
+.event-banner-zone .bx-controls .bx-controls-direction .bx-prev{
+    position: absolute;
+    right: 40px;
+}
+.event-banner-zone .bx-pager{
+    position: absolute;
+    top: 36px;
+    right:110px;
+    display: flex;
+    font-weight: 700;
     color: #3a3a4a;
     font-size: 16px;
     font-family: 'NotoKr';
 	font-style: normal;
 }
-.banner-zone .controls2{
-	margin-left: 20px;
-	margin-top: 3px;
+.event-banner-zone .bx-pager .bx-pager-item{
+    padding-right: 5px;
 }
-.banner-zone img{
-	margin-top: -15px;
-}
+
 .about-hiwell{
 	width: 1180px;
     margin: 62px auto 0;
@@ -610,27 +630,34 @@
     padding: 33px 39px 0;
     border-radius: 20px 20px 55px 20px;
 	margin-left: 5.3%;
+    position: relative;
 }
-.banner-zone2 .banner-top{
-	position: relative;
-    top: -42px;
-    left: 150px;
-    padding-right: 82px;
+.banner-zone2 .bx-controls .bx-controls-direction{
+    position: absolute;
+    top:-50px;
+    right: 20px;
 }
-.banner-zone2 span em{
-	font-weight: 700;
+.banner-zone2 .bx-controls .bx-controls-direction .bx-prev{
+    position: absolute;
+    right: 40px;
+}
+.banner-zone2 .bx-pager{
+    position: absolute;
+    top: -50px;
+    right: 80px;
+    display: flex;
+    font-weight: 700;
     color: #3a3a4a;
     font-size: 16px;
     font-family: 'NotoKr';
 	font-style: normal;
 }
-.banner-zone2 .controls2{
-	margin-left: 20px;
-	margin-top: 3px;
+.banner-zone2 .bx-pager .bx-pager-item{
+    padding-right: 5px;
 }
-.banner-zone2 img{
-	margin-top: -15px;
-}
+
+
+
 .news-hiwell{
 	width: 1180px;
     height: 261px;
@@ -744,3 +771,7 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+
+
+

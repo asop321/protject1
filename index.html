@@ -75,10 +75,10 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/manifest.json" />
-    
+
     <title>국민건강보험공단</title>
     <link rel="stylesheet" href="css/reset.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
@@ -93,7 +93,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main-wrap.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="js/jq.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -588,17 +594,27 @@
               </span>
               <a class="stop2 fl" href="#">stop</a>
             </div>
-            <div class="main-banner">
-              <p class="slogan">2021년도 국가건강검진</p>
-              <p class="title">2022년 6월까지 연장 방법 안내</p>
-              <div class="banner-controls">
-                <a href="#" class="b-prev">prev</a>
-                <a href="#" class="b-next">next</a>
+            <div class="slideWrap text-controls">
+              <div >
+                <ul class="main-banner">
+                  <li>
+                    <p class="slogan">2021년도 국가건강검진</p>
+                    <p class="title">2022년 6월까지 연장 방법 안내</p>
+                  </li>
+                  <li>
+                    <p class="slogan">안녕하세요</p>
+                    <p class="title">공단홈페이지방문을 환영합니다.</p>
+                  </li>
+                </ul>
+                <div class="banner-controls">
+                  <span class="text-prev"><a href="#">prev</a></span>
+                  <span class="text-next"><a href="#">next</a></span>
+                </div>
+                <div class="custom_pager"></div>
               </div>
             </div>
           </div>
         </div>
-
         <div id="background">
           <div class="hiwell-news-warp cf">
             <div class="news-area fl">
@@ -707,21 +723,14 @@
                 </dd>
               </dl>
             </div>
-            <div class="banner-zone fr">
+            <div class="event-banner-zone fr">
               <p class="p-title">이벤트</p>
-              <div class="banner-top cf">
-                <span class="fl">
-                  <em>1</em>
-                  /
-                  <em>1</em>
-                </span>
-                <div class="controls controls2 fl">
-                  <a class="prev" href="#">Prev</a>
-                  <a class="stop" href="#">stop</a>
-                  <a class="next" href="#">Next</a>
+              <div class="event-slideWrap event-controls">
+                <div class="event-control-slider">
+                  <img src="./img/20220208_event_pc01.png" alt="event1" />
+                  <img src="./img/20220218_event_pc01.png" alt="event2" />
                 </div>
               </div>
-              <img src="./img/20220208_event_pc01.png" alt="이벤트배너" />
             </div>
           </div>
           <div class="about-hiwell cf">
@@ -789,22 +798,15 @@
             </div>
             <div class="banner-zone2 fl">
               <p class="p-title">홍보존</p>
-              <div class="banner-top cf">
-                <span class="fl">
-                  <em>1</em>
-                  /
-                  <em>3</em>
-                </span>
-                <div class="controls controls2 fl">
-                  <a class="prev" href="#prev" onclick="prevBanner3();">Prev</a>
-                  <a class="stop" href="#">stop</a>
-                  <a class="next" href="#next" onclick="nextBanner3();">Next</a>
+              <div class="slideWrap controls">
+                <div class="control-slider">
+                  <img src="./img/img/img1.png" alt="img1" />
+                  <img src="./img/img/img2.png" alt="img2" />
+                  <img src="./img/img/img3.png" alt="img3" />
                 </div>
               </div>
-              <img src="img/img/img1.png" alt="bnner3" id="Banner3" />
             </div>
           </div>
-
           <div class="news-hiwell cf">
             <div class="customer-wrap fl">
               <p class="cw-title">고객센터</p>
@@ -1045,62 +1047,10 @@
         <p><a id="back-to-top" href="#top" class="top">상단으로</a></p>
       </div>
     </div>
-    <script>
-      const box = document.querySelector('div.btn')
-
-      const panel = document.querySelector('div.box-header')
-      box.addEventListener('click', () => {
-        box.classList.toggle('on')
-        panel.classList.add('active')
-      })
-    </script>
-    <script>
-      const box2 = document.querySelector('div.btn2')
-
-      const panel2 = document.querySelector('div.box-header2')
-      box2.addEventListener('click', () => {
-        box2.classList.toggle('on')
-        panel2.classList.add('active')
-      })
-    </script>
-    <script>
-      let num = 1
-      function nextBanner() {
-        num++
-        if (num > 11) {
-          num = 1
-        }
-        document.getElementById('Banner').src =
-          'img/banner/main-banner' + num + '.png'
-      }
-      function prevBanner() {
-        num++
-        if (num > 11) {
-          num = 1
-        }
-        document.getElementById('Banner').src =
-          'img/banner/main-banner' + num + '.png'
-      }
-    </script>
-    <script>
-      let num2 = 1
-      function nextBanner3() {
-        num2++
-        if (num2 > 3) {
-          num2 = 1
-        }
-        document.getElementById('Banner3').src = 'img/img/img' + num2 + '.png'
-      }
-      function prevBanner3() {
-        num2++
-        if (num2 > 3) {
-          num2 = 1
-        }
-        document.getElementById('Banner3').src = 'img/img/img' + num2 + '.png'
-      }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jq.js"></script>
+    <!-- 코어 로드 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 플러그인 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 
     <script src="./js/detectmobilebrowser.js"></script>
     <script>
@@ -1108,5 +1058,9 @@
         location.href = './mobile/index.html'
       }
     </script>
+    <!-- 바닐라 script -->
+    <script src="js/toggle_button.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/topbtn_jq.js"></script>
   </body>
 </html>
