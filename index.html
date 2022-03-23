@@ -1,788 +1,1112 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    
+    <title>국민건강보험공단</title>
+    <link rel="stylesheet" href="css/reset.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main-wrap.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="js/jq.js" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
-	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-	<link rel="manifest" href="favicon/manifest.json" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap" rel="stylesheet">
-	<title>국민건강보험공단</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/main-wrap.css">
-	<link rel="stylesheet" href="css/footer.css">
-</head>
+  <body>
+    <div id="wrap">
+      <div id="skip">
+        <a href="#wrap" rel="bookmark">본문 바로가기</a>
+        <a href="#nav" rel="bookmark">주메뉴 바로가기</a>
+        <a href="#background" rel="bookmark">메인메뉴바로가기</a>
+        <a href="#footer" rel="bookmark">국민건강보험공단정보 바로가기</a>
+      </div>
+      <div class="header">
+        <div class="header-top">
+          <div class="inner cf">
+            <div class="web-acc fl">
+              <span class="zoom fl">
+                <em>화면</em>
+                <button type="button" class="zoom-in">
+                  <span>화면확대</span>
+                </button>
+                <button type="button" class="zoom-out">
+                  <span>화면축소</span>
+                </button>
+              </span>
 
-<body>
-	<div id="wrap">
-		<div id="skip">
-			<a href="#wrap" rel="bookmark">본문 바로가기</a>
-			<a href="#nav" rel="bookmark">주메뉴 바로가기</a>
-			<a href="#background" rel="bookmark">메인메뉴바로가기</a>
-			<a href="#footer" rel="bookmark"> 국민건강보험공단정보 바로가기</a>
-		</div>
-		<div class="header">
-			<div class="header-top">
-				<div class="inner cf">
-					<div class="web-acc fl">
-						<span class="zoom fl">
-							<em>화면</em>
-							<button type="button" class="zoom-in"><span>화면확대</span></button>
-							<button type="button" class="zoom-out"><span>화면축소</span></button>
-						</span>
+              <span class="sound fr">
+                <em>소리</em>
+                <button type="button" class="sound-up">
+                  <span>소리크게</span>
+                </button>
+                <button type="button" class="sound-down">
+                  <span>소리작게</span>
+                </button>
+                <button type="button" class="sound-i">
+                  <span>소리키고끄기</span>
+                </button>
+              </span>
+            </div>
+            <div class="user-set fr">
+              <ul class="cf">
+                <li class="fl">
+                  <a href="./notice_board/index.html">로그인</a>
+                </li>
+                <li class="fl">
+                  <a href="./notice_board/index.html">회원가입</a>
+                </li>
+                <li class="fl">
+                  <a href="./notice_board/index.html">인증서안내</a>
+                </li>
+                <li class="fl">
+                  <a href="./notice_board/index.html">전체메뉴</a>
+                </li>
+                <li class="language fl">
+                  <div class="btn">
+                    <button type="button" class="toggle">Language</button>
+                  </div>
+                  <div class="box-header">
+                    <ul class="language-list">
+                      <li><a href="./notice_board/index.html">English</a></li>
+                      <li><a href="./notice_board/index.html">中文</a></li>
+                      <li><a href="./notice_board/index.html">日本</a></li>
+                      <li>
+                        <a href="./notice_board/index.html">Tiếng Việt</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="fl l-list">
+                  <div class="btn2">
+                    <button type="button" class="red">분야별업무사이트</button>
+                  </div>
+                  <div class="box-header2">
+                    <ul class="site-list cf">
+                      <li class="fl">
+                        <a href="./notice_board/index.html">
+                          사회보험
+                          <br />
+                          통합징수 포털
+                        </a>
+                      </li>
+                      <li class="fl">
+                        <a href="./notice_board/index.html">
+                          노인장기
+                          <br />
+                          요양보험
+                        </a>
+                      </li>
+                      <li class="fl">
+                        <a href="./notice_board/index.html">
+                          요양기관
+                          <br />
+                          정보마당
+                        </a>
+                      </li>
+                      <li class="fl">
+                        <a href="./notice_board/index.html">
+                          EDI
+                          <br />
+                          서비스
+                        </a>
+                      </li>
+                      <li class="fl">
+                        <a href="./notice_board/index.html">
+                          건강검진
+                          <br />
+                          기관포털
+                        </a>
+                      </li>
+                      <li class="fl">
+                        <a href="./notice_board/index.html">
+                          건강보험자료
+                          <br />
+                          공유서비스
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav">
+          <div class="gnb-nav">
+            <div id="nav" tabindex="1">
+              <div class="width100">
+                <div class="inner cf">
+                  <h1 class="logo fl">
+                    <a href="index.html">
+                      <img
+                        src="./img/logo.png"
+                        alt="건강보험공단사이트로 이동합니다."
+                      />
+                    </a>
+                  </h1>
+                  <ul class="gnb fl">
+                    <li class="fl">
+                      <a href="./notice_board/index.html" class="br">
+                        민원여기요
+                      </a>
+                      <ul class="depth2">
+                        <li>
+                          <a href="./notice_board/index.html">민원안내</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">개인민원</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">사업장민원</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">상담문의</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">신고센터</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="fl">
+                      <a href="./notice_board/index.html" class="br">건강iN</a>
+                      <ul class="depth2">
+                        <li>
+                          <a href="./notice_board/index.html">나의건강관리</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">가족건강관리</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">건강프로그램</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">건강생활</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">건강자료실</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            검진기관/병원찾기
+                          </a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            국민건강알람
+                            <i class="ico-link2"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            건강생활실천지원금제
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="fl">
+                      <a href="./notice_board/index.html" class="br">
+                        정책센터
+                      </a>
+                      <ul class="depth2">
+                        <li>
+                          <a href="./notice_board/index.html">국민건강보험</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            노인장기요양보험
+                            <i class="ico-link2"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">정책홍보관</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            사회보험통합징수
+                          </a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">권리구제제도</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            법령정보 건강Law
+                            <i class="ico-link2"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="fl">
+                      <a href="./notice_board/index.html" class="br">
+                        국민과함께
+                      </a>
+                      <ul class="depth2">
+                        <li>
+                          <a href="./notice_board/index.html">정보공개</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">
+                            경영공시
+                            <i class="ico-link2"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">국민참여</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">뉴스/소식</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="fl">
+                      <a href="./notice_board/index.html" class="br">
+                        공단요모조모
+                      </a>
+                      <ul class="depth2">
+                        <li>
+                          <a href="./notice_board/index.html">공단소개</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">조직 및 인원</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">홍보센터</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">경영철학</a>
+                        </li>
+                        <li>
+                          <a href="./notice_board/index.html">사회공헌</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="user-support fl">
+                    <button class="sub-search" type="button"></button>
+                    <button class="all-manu" type="button"></button>
+                  </div>
+                  <div class="favorite-menu fl">
+                    <dl class="cf">
+                      <dt class="fl">자주 찾는 메뉴</dt>
+                      <dd class="fl">
+                        <ul class="cf">
+                          <li class="fl">
+                            <a href="./notice_board/index.html">
+                              건강보험제도 유형
+                            </a>
+                          </li>
+                          <li class="fl">
+                            <a href="./notice_board/index.html">
+                              자격취득/가입
+                            </a>
+                          </li>
+                          <li class="fl">
+                            <a href="./notice_board/index.html">
+                              진료 및 투약정보
+                            </a>
+                          </li>
+                          <li class="fl">
+                            <a href="./notice_board/index.html">검진대상조회</a>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-wrap">
+        <div class="main-search">
+          <div class="inner cf">
+            <div class="search fl">
+              <div class="from fl">
+                <input
+                  type="text"
+                  title="검색어를 입력해주세요."
+                  placeholder="무엇을 찾고 계시나요?"
+                />
+              </div>
+              <a class="search-btn fr" href="#">검색</a>
+            </div>
+            <div class="notice fr">
+              <img
+                src="img/banner/main-banner1.png"
+                alt="배너"
+                width="410"
+                id="Banner"
+              />
+              <span class="fl">
+                <em>1</em>
+                /
+                <em>11</em>
+              </span>
 
-						<span class="sound fr">
-							<em>소리</em>
-							<button type="button" class="sound-up"><span>소리크게</span></button>
-							<button type="button" class="sound-down"><span>소리작게</span></button>
-							<button type="button" class="sound-i"><span>소리키고끄기</span></button>
-						</span>
-					</div>
-					<div class="user-set fr">
-						<ul class="cf">
-							<li class="fl"><a href="./notice_board/index.html">로그인</a></li>
-							<li class="fl"><a href="./notice_board/index.html">회원가입</a></li>
-							<li class="fl"><a href="./notice_board/index.html">인증서안내</a></li>
-							<li class="fl"><a href="./notice_board/index.html">전체메뉴</a></li>
-							<li class="language fl">
-								<div class="btn"><button type="button" class="toggle">Language</button></div>
-								<div class="box-header">
-									<ul class="language-list">
-										<li><a href="./notice_board/index.html">English</a></li>
-										<li><a href="./notice_board/index.html">中文</a></li>
-										<li><a href="./notice_board/index.html">日本</a></li>
-										<li><a href="./notice_board/index.html">Tiếng Việt</a></li>
-									</ul>
-								</div>
-								<script>
-									const box = document.querySelector('div.btn');
+              <div class="controls fl">
+                <a class="prev" href="#prev" onclick="prevBanner();">Prev</a>
+                <a class="stop" href="#">stop</a>
+                <a class="next" href="#next" onclick="nextBanner();">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="visitor-menu">
+          <div class="inner">
+            <div class="visitor">
+              <div class="visitor-title cf">
+                <div class="title fl"><strong>방문자별 맞춤 메뉴</strong></div>
+                <span class="visitor-btn cf">
+                  <button type="button" class="on fl">개인</button>
+                  <button type="button" class="on2 fl">사업장</button>
+                </span>
+              </div>
+              <div class="visitor-icon cf">
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-qualification.png" alt="아이콘1" />
+                      </span>
 
-									const panel = document.querySelector('div.box-header');
-									box.addEventListener('click', () => {
-										box.classList.toggle('on');
-										panel.classList.add('active')
-									})
-								</script>
-							</li>
-							<li class="fl l-list ">
-								<div class="btn2"><button type="button" class="red ">분야별업무사이트</button></div>
-								<div class="box-header2">
-									<ul class="site-list cf">
-										<li class="fl"><a href="./notice_board/index.html">
-												사회보험
-												<br />
-												통합징수 포털
-											</a></li>
-										<li class="fl"><a href="./notice_board/index.html">
-												노인장기
-												<br />
-												요양보험
-											</a></li>
-										<li class="fl"><a href="./notice_board/index.html">
-												요양기관
-												<br />
-												정보마당
-											</a></li>
-										<li class="fl"><a href="./notice_board/index.html">
-												EDI
-												<br />
-												서비스
-											</a></li>
-										<li class="fl"><a href="./notice_board/index.html">
-												건강검진
-												<br />
-												기관포털
-											</a></li>
-										<li class="fl"><a href="./notice_board/index.html">
-												건강보험자료
-												<br />
-												공유서비스
-											</a></li>
+                      <p>
+                        자격득실
+                        <br />
+                        확인서 발급
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-refund.png" alt="아이콘2" />
+                      </span>
+                      <p>
+                        환급금
+                        <br />
+                        조회/신청
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-insurance.png" alt="아이콘3" />
+                      </span>
+                      <p>
+                        보험료
+                        <br />
+                        조회/납부
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-burden.png" alt="아이콘4" />
+                      </span>
+                      <p>
+                        본인부담
+                        <br />
+                        상한액조회
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-calculation.png" alt="아이콘5" />
+                      </span>
+                      <p>
+                        보험료
+                        <br />
+                        계산기
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-transfer.png" alt="아이콘6" />
+                      </span>
+                      <p>
+                        재난적의료비
+                        <br />
+                        지원안내
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-checkups.png" alt="아이콘7" />
+                      </span>
+                      <p>
+                        건강검진
+                        <br />
+                        대상조회
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-family.png" alt="아이콘8" />
+                      </span>
+                      <p>
+                        가족
+                        <br />
+                        건강관리
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/ico-company-inquiry.png" alt="아이콘9" />
+                      </span>
+                      <p>
+                        민원
+                        <br />
+                        서식자료실
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="inner cf">
+            <div class="slides-banner cf">
+              <span class="fl">
+                <em>1</em>
+                /
+                <em>2</em>
+              </span>
+              <a class="stop2 fl" href="#">stop</a>
+            </div>
+            <div class="main-banner">
+              <p class="slogan">2021년도 국가건강검진</p>
+              <p class="title">2022년 6월까지 연장 방법 안내</p>
+              <div class="banner-controls">
+                <a href="#" class="b-prev">prev</a>
+                <a href="#" class="b-next">next</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-									</ul>
-								</div>
-								<script>
-									const box2 = document.querySelector('div.btn2');
+        <div id="background">
+          <div class="hiwell-news-warp cf">
+            <div class="news-area fl">
+              <ul>
+                <li><a href="./notice_board/index.html">공지사항</a></li>
+                <li><a href="./notice_board/index.html">채용공고</a></li>
+                <li><a href="./notice_board/index.html">보도자료</a></li>
+                <li><a href="./notice_board/index.html">입찰공고</a></li>
+                <li><a href="./notice_board/index.html">경영공시</a></li>
+              </ul>
+            </div>
+            <div class="health-info fl">
+              <p class="p-title">건강정보</p>
+              <ul>
+                <li>
+                  <a href="./notice_board/index.html">가까운 병의원 찾기</a>
+                  <span>
+                    <img src="img/icon-health-info-1.png" alt="info-1" />
+                  </span>
+                </li>
+                <li>
+                  <a href="./notice_board/index.html">검진기관 찾기</a>
+                  <span>
+                    <img src="img/icon-health-info-2.png" alt="info-2" />
+                  </span>
+                </li>
+                <li>
+                  <a href="./notice_board/index.html">건강iN 매거진</a>
+                  <span>
+                    <img src="img/icon-health-info-3.png" alt="info-3" />
+                  </span>
+                </li>
+                <li>
+                  <a href="./notice_board/index.html">건강뉴스</a>
+                  <span>
+                    <img src="img/icon-health-info-4.png" alt="info-4" />
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="guarantee fl">
+              <a href="./notice_board/index.html">
+                <dl>
+                  <dt>보장성강화</dt>
+                  <dd>
+                    병원비 걱정없는 든든한 나라
+                    <br />
+                    건강보험 보장성강화 대책을 알아보세요!
+                  </dd>
+                </dl>
+              </a>
+              <a href="./notice_board/index.html">
+                <dl>
+                  <dt>건강보험연구원</dt>
+                  <dd>
+                    Health Insurance Research
+                    <br />
+                    Institute(HIRI)
+                  </dd>
+                </dl>
+              </a>
+            </div>
+          </div>
+          <div class="hiwell-service cf">
+            <div class="main-policy fl">
+              <dl>
+                <dt>
+                  알아두면 건강해 지는 건강보험공단
+                  <strong>주요정책</strong>
+                </dt>
+                <dd>
+                  <a href="./notice_board/index.html">
+                    <p>소중한 나의 가족! 건강관리 쉽게 하는 방법은 없을까요?</p>
+                    <div class="balloon">
+                      <pre
+                        class="pre"
+                      ><span>가족건강관리</span> <br>서비스를 확인해 보세요!</pre>
+                    </div>
+                  </a>
+                  <a href="./notice_board/index.html">
+                    <p class="p-on">
+                      내가 받는 건강 보험료 혜택! 얼마나 될까요?
+                    </p>
+                    <div class="balloon">
+                      <pre
+                        class="pre"
+                      ><span>내가 낸 보험료 혜택</span> <br>서비스를 확인해보세요!</pre>
+                    </div>
+                  </a>
+                  <a href="./notice_board/index.html">
+                    <p>공단은 지역사회에 어떤 일을 할까요?</p>
+                    <div class="balloon">
+                      <pre
+                        class="pre"
+                      ><span>지역사회돌봄</span>에서<br>공단의 역활을 확인해 보세요!</pre>
+                    </div>
+                  </a>
+                  <a href="./notice_board/index.html">
+                    <p>내 건강보험료는 어떻게 책정되었을까요?</p>
+                    <div class="balloon">
+                      <pre
+                        class="pre"
+                      ><span>보험료 부과 및 산정</span><br> 기준을 확인해 보세요!</pre>
+                    </div>
+                  </a>
+                </dd>
+              </dl>
+            </div>
+            <div class="banner-zone fr">
+              <p class="p-title">이벤트</p>
+              <div class="banner-top cf">
+                <span class="fl">
+                  <em>1</em>
+                  /
+                  <em>1</em>
+                </span>
+                <div class="controls controls2 fl">
+                  <a class="prev" href="#">Prev</a>
+                  <a class="stop" href="#">stop</a>
+                  <a class="next" href="#">Next</a>
+                </div>
+              </div>
+              <img src="./img/20220208_event_pc01.png" alt="이벤트배너" />
+            </div>
+          </div>
+          <div class="about-hiwell cf">
+            <div class="health-state fl">
+              <a href="./notice_board/index.html">국민건강 알람서비스</a>
+              <a href="./notice_board/index.html" class="date">
+                2022.03.03
+                <i class="arr-link-2"></i>
+                <br />
+                전국기준
+              </a>
+              <div class="graph">
+                <ul class="cf">
+                  <li>
+                    <div class="level-1">
+                      <div class="state">
+                        <strong>관심</strong>
+                        <p>52</p>
+                      </div>
+                    </div>
+                    <button type="button" class="fl btn-h">감기</button>
+                  </li>
+                  <li>
+                    <button type="button" class="fl btn-h">눈병</button>
+                  </li>
+                  <li>
+                    <button type="button" class="fl btn-h btn-on">
+                      식중독
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="fl btn-h">천식</button>
+                  </li>
+                  <li>
+                    <button type="button" class="fl btn-h">피부염</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-intro fl">
+              <div class="organization">
+                <a href="./notice_board/index.html">
+                  <dl>
+                    <dt class="dt-title">조직도</dt>
+                    <dd class="dd-title">
+                      국민건강보험공단의
+                      <br />
+                      부서별 조직도를 확인해보세요.
+                    </dd>
+                  </dl>
+                </a>
+              </div>
+              <div class="center-intro">
+                <a href="./notice_board/index.html">
+                  <dl>
+                    <dt class="dt-title">조직도</dt>
+                    <dd class="dd-title">
+                      국민건강보험공단의
+                      <br />
+                      부서별 조직도를 확인해보세요.
+                    </dd>
+                  </dl>
+                </a>
+              </div>
+            </div>
+            <div class="banner-zone2 fl">
+              <p class="p-title">홍보존</p>
+              <div class="banner-top cf">
+                <span class="fl">
+                  <em>1</em>
+                  /
+                  <em>3</em>
+                </span>
+                <div class="controls controls2 fl">
+                  <a class="prev" href="#prev" onclick="prevBanner3();">Prev</a>
+                  <a class="stop" href="#">stop</a>
+                  <a class="next" href="#next" onclick="nextBanner3();">Next</a>
+                </div>
+              </div>
+              <img src="img/img/img1.png" alt="bnner3" id="Banner3" />
+            </div>
+          </div>
 
-									const panel2 = document.querySelector('div.box-header2');
-									box2.addEventListener('click', () => {
-										box2.classList.toggle('on');
-										panel2.classList.add('active')
-									})
-								</script>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="header-nav">
-				<div class="gnb-nav">
-					<div id="nav" tabindex="1">
-						<div class="width100">
-							<div class="inner cf">
-								<h1 class="logo fl"><a href="index.html"><img src="./img/logo.png"
-											alt="건강보험공단사이트로 이동합니다."></a></h1>
-								<ul class="gnb fl">
-									<li class="fl">
-										<a href="./notice_board/index.html" class="br">민원여기요</a>
-										<ul class="depth2">
-											<li><a href="./notice_board/index.html">민원안내</a></li>
-											<li><a href="./notice_board/index.html">개인민원</a></li>
-											<li><a href="./notice_board/index.html">사업장민원</a></li>
-											<li><a href="./notice_board/index.html">상담문의</a></li>
-											<li><a href="./notice_board/index.html">신고센터</a></li>
-										</ul>
-									</li>
-									<li class="fl">
-										<a href="./notice_board/index.html" class="br">건강iN</a>
-										<ul class="depth2">
-											<li><a href="./notice_board/index.html">나의건강관리</a></li>
-											<li><a href="./notice_board/index.html">가족건강관리</a></li>
-											<li><a href="./notice_board/index.html">건강프로그램</a></li>
-											<li><a href="./notice_board/index.html">건강생활</a></li>
-											<li><a href="./notice_board/index.html">건강자료실</a></li>
-											<li><a href="./notice_board/index.html">검진기관/병원찾기</a></li>
-											<li>
-												<a href="./notice_board/index.html">
-													국민건강알람
-													<i class="ico-link2"> </i>
-												</a>
-											</li>
-											<li><a href="./notice_board/index.html">건강생활실천지원금제</a></li>
-										</ul>
-									</li>
-									<li class="fl">
-										<a href="./notice_board/index.html" class="br">정책센터</a>
-										<ul class="depth2">
-											<li><a href="./notice_board/index.html">국민건강보험</a></li>
-											<li><a href="./notice_board/index.html">노인장기요양보험
-													<i class="ico-link2"> </i>
-												</a></li>
-											<li><a href="./notice_board/index.html">정책홍보관</a></li>
-											<li><a href="./notice_board/index.html">사회보험통합징수</a></li>
-											<li><a href="./notice_board/index.html">권리구제제도</a></li>
-											<li><a href="./notice_board/index.html">법령정보 건강Law
-													<i class="ico-link2"> </i>
-												</a></li>
-										</ul>
-									</li>
-									<li class="fl">
-										<a href="./notice_board/index.html" class="br">국민과함께</a>
-										<ul class="depth2">
-											<li><a href="./notice_board/index.html">정보공개</a></li>
-											<li><a href="./notice_board/index.html">경영공시
-													<i class="ico-link2"> </i>
-												</a></li>
-											<li><a href="./notice_board/index.html">국민참여</a></li>
-											<li><a href="./notice_board/index.html">뉴스/소식</a></li>
-										</ul>
-									</li>
-									<li class="fl">
-										<a href="./notice_board/index.html" class="br">공단요모조모</a>
-										<ul class="depth2">
-											<li><a href="./notice_board/index.html">공단소개</a></li>
-											<li><a href="./notice_board/index.html">조직 및 인원</a></li>
-											<li><a href="./notice_board/index.html">홍보센터</a></li>
-											<li><a href="./notice_board/index.html">경영철학</a></li>
-											<li><a href="./notice_board/index.html">사회공헌</a></li>
-										</ul>
-									</li>
-								</ul>
-								<div class="user-support fl">
-									<button class="sub-search" type="button"></button>
-									<button class="all-manu" type="button"></button>
-								</div>
-								<div class="favorite-menu fl">
-									<dl class="cf">
-										<dt class="fl">자주 찾는 메뉴</dt>
-										<dd class="fl">
-											<ul class="cf">
-												<li class="fl"><a href="./notice_board/index.html">건강보험제도 유형</a></li>
-												<li class="fl"><a href="./notice_board/index.html">자격취득/가입</a></li>
-												<li class="fl"><a href="./notice_board/index.html">진료 및 투약정보</a></li>
-												<li class="fl"><a href="./notice_board/index.html">검진대상조회</a></li>
-											</ul>
-										</dd>
-									</dl>
+          <div class="news-hiwell cf">
+            <div class="customer-wrap fl">
+              <p class="cw-title">고객센터</p>
+              <ul class="cf">
+                <li class="fl">
+                  <a href="./notice_board/index.html"></a>
+                  <dl>
+                    <dt>
+                      1577-1000
+                      <p class="sub-desc">(해외이용 : 82-33-811-2001)</p>
+                    </dt>
+                    <dd>업무 시간 09:00~18:00</dd>
+                    <dd class="font-12">(이용료: 발신자 부담)</dd>
+                  </dl>
+                  <span class="icon">
+                    <img src="./img/i-customer-1.png" alt="icon1" />
+                  </span>
+                </li>
+                <li class="fr">
+                  <a href="./notice_board/index.html">
+                    <dl>
+                      <dt class="bt">외국인 민원센터</dt>
+                      <dd></dd>
+                    </dl>
+                    <span class="icon">
+                      <img src="./img/i-customer-2.png" alt="icon2" />
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="news-letter fl">
+              <p class="nl-title p-title">소식지 신청/해지</p>
+              <div>
+                <a href="./notice_board/index.html">
+                  더 빠르게
+                  <br />
+                  건강보험 정책과
+                  <br />
+                  정보를 제공합니다.
+                </a>
+              </div>
+            </div>
+            <div class="app-download fl">
+              <p class="nl-title p-title">APP 다운로드</p>
+              <ul class="cf">
+                <li class="fl">
+                  <p class="qr-code">
+                    <img
+                      src="./img/qr-android.png"
+                      alt="안드로이드 어플 다운로드 QR 코드"
+                    />
+                  </p>
+                  Android
+                </li>
+                <li class="fr">
+                  <p class="qr-code">
+                    <img
+                      src="./img/qr-iso.png"
+                      alt="안드로이드 어플 다운로드 QR 코드"
+                    />
+                  </p>
+                  iOS
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="inner">
+          <div class="footer-nav cf">
+            <ul class="nav-link fl">
+              <li class="fl">
+                <a href="./notice_board/index.html">이용약관</a>
+              </li>
+              <li class="fl">
+                <a href="./notice_board/index.html">
+                  영상정보처리기기 운영지침
+                </a>
+              </li>
+              <li class="fl">
+                <strong>
+                  <a href="./notice_board/index.html">개인정보처리방침</a>
+                </strong>
+              </li>
+              <li class="fl">
+                <a href="./notice_board/index.html">온라인도우미</a>
+              </li>
+            </ul>
+            <div class="family-link fr">
+              <div class="family-site-area">
+                <div class="dropdown-content">
+                  <a href="./notice_board/index.html">노인장기요양보험</a>
+                  <a href="./notice_board/index.html">사회보험징수포털</a>
+                  <a href="./notice_board/index.html">
+                    요양기관정보마당 사이트
+                  </a>
+                  <a href="./notice_board/index.html">국민건강보험 EDI서비스</a>
+                  <a href="./notice_board/index.html">건강관리포털시스템</a>
+                  <a href="./notice_board/index.html">국가건강검진교육연수원</a>
+                  <a href="./notice_board/index.html">
+                    국민건강보험자료 공유서비스
+                  </a>
+                  <a href="./notice_board/index.html">
+                    국민건강보험공단 인재개발원
+                  </a>
+                  <a href="./notice_board/index.html">
+                    국민건강보험공단 전문도서관
+                  </a>
+                  <a href="./notice_board/index.html">
+                    국민건강보험공단 공단가족
+                  </a>
+                </div>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main-wrap">
-			<div class="main-search">
-				<div class="inner cf">
-					<div class="search fl">
-						<div class="from fl">
-							<input type="text" title="검색어를 입력해주세요." placeholder="무엇을 찾고 계시나요?">
-						</div>
-						<a class="search-btn fr" href="#">검색</a>
-					</div>
-					<div class="notice fr">
-						<img src="img/banner/main-banner1.png" alt="배너" width="410" id="Banner">
-						<span class="fl"><em>1</em> / <em>11</em></span>
+                <p>
+                  <button type="button">내부관련사이트</button>
+                </p>
 
-						<div class="controls fl">
-							<a class="prev" href="#prev" onclick="prevBanner();">Prev</a>
-							<a class="stop" href="#">stop</a>
-							<a class="next" href="#next" onclick="nextBanner();">Next</a>
-						</div>
-						<script>
-							let num = 1;
-							function nextBanner() {
-								num++
-								if (num > 11) { num = 1 }
-								document.getElementById('Banner').src = "img/banner/main-banner" + num + ".png"
-							}
-							function prevBanner() {
-								num++
-								if (num > 11) { num = 1 }
-								document.getElementById('Banner').src = "img/banner/main-banner" + num + ".png"
-							}
+                <div class="box-site"></div>
+                <a class="btn-move">이동</a>
+              </div>
 
-						</script>
-					</div>
+              <div class="family-site-area">
+                <div class="dropdown-content scroll">
+                  <a href="./notice_board/index.html">서울요양원</a>
+                  <a href="./notice_board/index.html">일산병원</a>
+                  <a href="./notice_board/index.html">행정정보공동이용센터</a>
+                  <a href="./notice_board/index.html">국민연금</a>
+                  <a href="./notice_board/index.html">근로복지공단</a>
+                  <a href="./notice_board/index.html">보건복지부</a>
+                  <a href="../notice_board/index.html">국민권익위원회</a>
+                  <a href="./notice_board/index.html">인터넷 지로납부</a>
+                  <a href="./notice_board/index.html">건강보험심사평가원</a>
+                  <a href="./notice_board/index.html">정부24</a>
+                  <a href="./notice_board/index.html">
+                    대한민국 법원 전자가족관계
+                  </a>
+                  <a href="./notice_board/index.html">
+                    보건복지부 인터넷채팅상담
+                  </a>
+                  <a href="./notice_board/index.html">보건복지부 통계포털</a>
+                  <a href="./notice_board/index.html">한국사회보장정보원</a>
+                  <a href="./notice_board/index.html">고용보험 인터넷서비스</a>
+                  <a href="../notice_board/index.html">
+                    고용산재보험 토탈서비스
+                  </a>
+                  <a href="./notice_board/index.html">한국보건의료연구원</a>
+                  <a href="./notice_board/index.html">한국의료분쟁조정중재원</a>
+                  <a href="./notice_board/index.html">하이코리아</a>
+                  <a href="./notice_board/index.html">국민건강보험 동우회</a>
+                  <a href="./notice_board/index.html">
+                    4대사회보험 정보연계센터
+                  </a>
+                  <a href="./notice_board/index.html">
+                    행정안전부 국민재난안전포털
+                  </a>
+                </div>
+                <p>
+                  <button type="button">관련사이트</button>
+                </p>
 
-				</div>
-			</div>
-			<div class="visitor-menu">
-				<div class="inner">
-					<div class="visitor">
-						<div class="visitor-title cf">
-							<div class="title fl"><strong>방문자별 맞춤 메뉴</strong></div>
-							<span class="visitor-btn cf">
-								<button type="button" class="on fl">개인</button>
-								<button type="button" class="on2 fl">사업장</button>
-							</span>
+                <div class="box-site"></div>
+                <a class="btn-move">이동</a>
+              </div>
+            </div>
+          </div>
+          <div class="txt-sns-area cf">
+            <div class="footer-txt fl">
+              <p>
+                본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를
+                위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
+              </p>
+              <p>
+                26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터
+                :1577-1000(발신자 부담) 업무시간 : 09시~18시
+              </p>
+              <p>
+                Copyright @ 2020 by National Health Insurance Service. All
+                rights reserved.
+              </p>
+            </div>
+            <div class="footer-icon fr">
+              <ul class="certification-list cf">
+                <li class="fl">
+                  <a href="./notice_board/index.html">평생건강 With You</a>
+                </li>
+                <li class="fl">
+                  <a href="./notice_board/index.html">
+                    개인정보보호 우수 웹·시스템
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="./notice_board/index.html">
+                    정보보호 및 개인정보보호 관리체계(ISMS-P) 인증서 보기
+                  </a>
+                </li>
+                <li class="fl">
+                  <a href="./notice_board/index.html">
+                    (사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성
+                    우수사이트 인증마크(WA인증마크)
+                  </a>
+                </li>
+              </ul>
+              <ul class="sns-link cf">
+                <li class="fl">
+                  <a class="naver" href="./notice_board/index.html">
+                    네이버 블로그
+                  </a>
+                </li>
+                <li class="fl">
+                  <a class="daum" href="./notice_board/index.html">
+                    다음 블로그
+                  </a>
+                </li>
+                <li class="fl">
+                  <a class="facebook" href="./notice_board/index.html">
+                    페이스북
+                  </a>
+                </li>
+                <li class="fl">
+                  <a class="kakao" href="./notice_board/index.html">
+                    카카오스토리
+                  </a>
+                </li>
+                <li class="fl">
+                  <a class="youtube" href="./notice_board/index.html">유튜브</a>
+                </li>
+                <li class="fl">
+                  <a class="insta" href="./notice_board/index.html">
+                    인스타그램
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p><a id="back-to-top" href="#top" class="top">상단으로</a></p>
+      </div>
+    </div>
+    <script>
+      const box = document.querySelector('div.btn')
 
-						</div>
-						<div class="visitor-icon cf">
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
+      const panel = document.querySelector('div.box-header')
+      box.addEventListener('click', () => {
+        box.classList.toggle('on')
+        panel.classList.add('active')
+      })
+    </script>
+    <script>
+      const box2 = document.querySelector('div.btn2')
 
-										<span><img src="img/ico-qualification.png" alt="아이콘1"></span>
+      const panel2 = document.querySelector('div.box-header2')
+      box2.addEventListener('click', () => {
+        box2.classList.toggle('on')
+        panel2.classList.add('active')
+      })
+    </script>
+    <script>
+      let num = 1
+      function nextBanner() {
+        num++
+        if (num > 11) {
+          num = 1
+        }
+        document.getElementById('Banner').src =
+          'img/banner/main-banner' + num + '.png'
+      }
+      function prevBanner() {
+        num++
+        if (num > 11) {
+          num = 1
+        }
+        document.getElementById('Banner').src =
+          'img/banner/main-banner' + num + '.png'
+      }
+    </script>
+    <script>
+      let num2 = 1
+      function nextBanner3() {
+        num2++
+        if (num2 > 3) {
+          num2 = 1
+        }
+        document.getElementById('Banner3').src = 'img/img/img' + num2 + '.png'
+      }
+      function prevBanner3() {
+        num2++
+        if (num2 > 3) {
+          num2 = 1
+        }
+        document.getElementById('Banner3').src = 'img/img/img' + num2 + '.png'
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jq.js"></script>
 
-										<p>
-											자격득실<br />
-											확인서 발급
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-refund.png" alt="아이콘2"></span>
-										<p>
-											환급금<br />
-											조회/신청
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-insurance.png" alt="아이콘3"></span>
-										<p>
-											보험료<br />
-											조회/납부
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-burden.png" alt="아이콘4"></span>
-										<p>
-											본인부담<br />
-											상한액조회
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-calculation.png" alt="아이콘5"></span>
-										<p>
-											보험료<br />
-											계산기
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-transfer.png" alt="아이콘6"></span>
-										<p>
-											재난적의료비<br />
-											지원안내
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-checkups.png" alt="아이콘7"></span>
-										<p>
-											건강검진<br />
-											대상조회
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-family.png" alt="아이콘8"></span>
-										<p>
-											가족<br />
-											건강관리
-										</p>
-									</a>
-								</li>
-							</ul>
-							<ul class="fl">
-								<li>
-									<a href="./notice_board/index.html">
-										<span><img src="img/ico-company-inquiry.png" alt="아이콘9"></span>
-										<p>
-											민원<br />
-											서식자료실
-										</p>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="banner">
-				<div class="inner cf">
-					<div class="slides-banner cf">
-						<span class="fl"><em>1</em> / <em>2</em></span>
-						<a class="stop2 fl" href="#">stop</a>
-					</div>
-					<div class="main-banner">
-						<p class="slogan">2021년도 국가건강검진</p>
-						<p class="title">2022년 6월까지 연장 방법 안내</p>
-						<div class="banner-controls">
-							<a href="#" class="b-prev">prev</a>
-							<a href="#" class="b-next">next</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="background">
-				<div class="hiwell-news-warp cf">
-					<div class="news-area fl">
-						<ul>
-							<li><a href="./notice_board/index.html">공지사항</a></li>
-							<li><a href="./notice_board/index.html">채용공고</a></li>
-							<li><a href="./notice_board/index.html">보도자료</a></li>
-							<li><a href="./notice_board/index.html">입찰공고</a></li>
-							<li><a href="./notice_board/index.html">경영공시</a></li>
-						</ul>
-					</div>
-					<div class="health-info fl">
-						<p class="p-title">건강정보</p>
-						<ul>
-							<li><a href="./notice_board/index.html">가까운 병의원 찾기</a>
-								<span><img src="img/icon-health-info-1.png" alt="info-1"></span>
-							</li>
-							<li><a href="./notice_board/index.html">검진기관 찾기</a>
-								<span><img src="img/icon-health-info-2.png" alt="info-2"></span>
-							</li>
-							<li><a href="./notice_board/index.html">건강iN 매거진</a>
-								<span><img src="img/icon-health-info-3.png" alt="info-3"></span>
-							</li>
-							<li><a href="./notice_board/index.html">건강뉴스</a>
-								<span><img src="img/icon-health-info-4.png" alt="info-4"></span>
-							</li>
-
-						</ul>
-					</div>
-					<div class="guarantee fl">
-						<a href="./notice_board/index.html">
-							<dl>
-								<dt>보장성강화</dt>
-								<dd>
-									병원비 걱정없는 든든한 나라
-									<br />
-									건강보험 보장성강화 대책을 알아보세요!
-								</dd>
-							</dl>
-						</a>
-						<a href="./notice_board/index.html">
-							<dl>
-								<dt>건강보험연구원</dt>
-								<dd>
-									Health Insurance Research
-									<br />
-									Institute(HIRI)
-								</dd>
-							</dl>
-						</a>
-					</div>
-				</div>
-				<div class="hiwell-service cf">
-					<div class="main-policy fl">
-						<dl>
-							<dt>
-								알아두면 건강해 지는 건강보험공단
-								<strong>주요정책</strong>
-							</dt>
-							<dd>
-								<a href="./notice_board/index.html">
-									<p>소중한 나의 가족! 건강관리 쉽게 하는 방법은 없을까요?</p>
-									<div class="balloon">
-										<pre class="pre"><span>가족건강관리</span> <br>서비스를 확인해 보세요!</pre>
-									</div>
-								</a>
-								<a href="./notice_board/index.html">
-									<p class="p-on">내가 받는 건강 보험료 혜택! 얼마나 될까요?</p>
-									<div class="balloon">
-										<pre class="pre"><span>내가 낸 보험료 혜택</span> <br>서비스를 확인해보세요!</pre>
-									</div>
-								</a>
-								<a href="./notice_board/index.html">
-									<p>공단은 지역사회에 어떤 일을 할까요?</p>
-									<div class="balloon">
-										<pre class="pre"><span>지역사회돌봄</span>에서<br>공단의 역활을 확인해 보세요!</pre>
-									</div>
-								</a>
-								<a href="./notice_board/index.html">
-									<p>내 건강보험료는 어떻게 책정되었을까요?</p>
-									<div class="balloon">
-										<pre class="pre"><span>보험료 부과 및 산정</span><br> 기준을 확인해 보세요!</pre>
-									</div>
-								</a>
-							</dd>
-						</dl>
-					</div>
-					<div class="banner-zone fr">
-						<p class="p-title">이벤트</p>
-						<div class="banner-top cf">
-							<span class="fl">
-								<em>1</em>
-								/
-								<em>1</em>
-							</span>
-							<div class="controls controls2 fl">
-								<a class="prev" href="#">Prev</a>
-								<a class="stop" href="#">stop</a>
-								<a class="next" href="#">Next</a>
-							</div>
-						</div>
-						<img src="./img/20220208_event_pc01.png" alt="이벤트배너">
-					</div>
-				</div>
-				<div class="about-hiwell cf">
-					<div class="health-state fl">
-						<a href="./notice_board/index.html">국민건강 알람서비스</a>
-						<a href="./notice_board/index.html" class="date">
-							2022.03.03
-							<i class="arr-link-2"></i>
-							<br />
-							전국기준
-						</a>
-						<div class="graph">
-							<ul class="cf">
-								<li>
-									<div class="level-1">
-										<div class="state">
-											<strong>관심</strong>
-											<p>52</p>
-										</div>
-									</div>
-									<button type="button" class="fl btn-h">감기</button>
-
-								</li>
-								<li>
-									<button type="button" class="fl  btn-h">눈병</button>
-								</li>
-								<li>
-									<button type="button" class="fl btn-h btn-on">식중독</button>
-								</li>
-								<li>
-									<button type="button" class="fl  btn-h">천식</button>
-								</li>
-								<li>
-									<button type="button" class="fl  btn-h">피부염</button>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="about-intro fl">
-						<div class="organization">
-							<a href="./notice_board/index.html">
-								<dl>
-									<dt class="dt-title">조직도</dt>
-									<dd class="dd-title">
-										국민건강보험공단의
-										<br />
-										부서별 조직도를 확인해보세요.
-									</dd>
-								</dl>
-							</a>
-						</div>
-						<div class="center-intro">
-							<a href="./notice_board/index.html">
-								<dl>
-									<dt class="dt-title">조직도</dt>
-									<dd class="dd-title">
-										국민건강보험공단의
-										<br />
-										부서별 조직도를 확인해보세요.
-									</dd>
-								</dl>
-							</a>
-						</div>
-					</div>
-					<div class="banner-zone2 fl">
-						<p class="p-title">홍보존</p>
-						<div class="banner-top cf">
-							<span class="fl">
-								<em>1</em>
-								/
-								<em>3</em>
-							</span>
-							<div class="controls controls2 fl">
-								<a class="prev" href="#prev" onclick="prevBanner3();">Prev</a>
-								<a class="stop" href="#">stop</a>
-								<a class="next" href="#next" onclick="nextBanner3();">Next</a>
-							</div>
-						</div>
-						<img src="img/img/img1.png" alt="bnner3" id="Banner3">
-					</div>
-					<script>
-						let num2 = 1;
-						function nextBanner3() {
-							num2++
-							if (num2 > 3) { num2 = 1 }
-							document.getElementById('Banner3').src = "img/img/img" + num2 + ".png"
-						}
-						function prevBanner3() {
-							num2++
-							if (num2 > 3) { num2 = 1 }
-							document.getElementById('Banner3').src = "img/img/img" + num2 + ".png"
-						}
-					</script>
-				</div>
-
-
-
-				<div class="news-hiwell cf">
-					<div class="customer-wrap fl">
-						<p class="cw-title">고객센터</p>
-						<ul class="cf">
-							<li class="fl">
-								<a href="./notice_board/index.html"></a>
-								<dl>
-									<dt>
-										1577-1000
-										<p class="sub-desc">(해외이용 : 82-33-811-2001)</p>
-									</dt>
-									<dd>업무 시간 09:00~18:00</dd>
-									<dd class="font-12">(이용료: 발신자 부담)</dd>
-
-								</dl>
-								<span class="icon">
-									<img src="./img/i-customer-1.png" alt="icon1">
-								</span>
-							</li>
-							<li class="fr">
-								<a href="./notice_board/index.html">
-									<dl>
-										<dt class="bt">외국인 민원센터</dt>
-										<dd></dd>
-									</dl>
-									<span class="icon">
-										<img src="./img/i-customer-2.png" alt="icon2">
-									</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="news-letter fl">
-						<p class="nl-title p-title">소식지 신청/해지</p>
-						<div>
-							<a href="./notice_board/index.html">
-								더 빠르게
-								<br />
-								건강보험 정책과
-								<br />
-								정보를 제공합니다.
-							</a>
-						</div>
-					</div>
-					<div class="app-download fl">
-						<p class="nl-title p-title">APP 다운로드</p>
-						<ul class="cf">
-							<li class="fl">
-								<p class="qr-code">
-									<img src="./img/qr-android.png" alt="안드로이드 어플 다운로드 QR 코드">
-								</p>
-								Android
-							</li>
-							<li class="fr">
-								<p class="qr-code">
-									<img src="./img/qr-iso.png" alt="안드로이드 어플 다운로드 QR 코드">
-								</p>
-								iOS
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div class="inner">
-				<div class="footer-nav cf">
-					<ul class="nav-link fl">
-						<li class="fl">
-							<a href="./notice_board/index.html">이용약관</a>
-						</li>
-						<li class="fl">
-							<a href="./notice_board/index.html">영상정보처리기기 운영지침</a>
-						</li>
-						<li class="fl">
-							<strong><a href="./notice_board/index.html">개인정보처리방침</a></strong>
-						</li>
-						<li class="fl">
-							<a href="./notice_board/index.html">온라인도우미</a>
-						</li>
-					</ul>
-					<div class="family-link fr">
-						<div class="family-site-area">
-
-							<div class="dropdown-content">
-								<a href="./notice_board/index.html">노인장기요양보험</a>
-								<a href="./notice_board/index.html">사회보험징수포털</a>
-								<a href="./notice_board/index.html">요양기관정보마당 사이트</a>
-								<a href="./notice_board/index.html">국민건강보험 EDI서비스</a>
-								<a href="./notice_board/index.html">건강관리포털시스템</a>
-								<a href="./notice_board/index.html">국가건강검진교육연수원</a>
-								<a href="./notice_board/index.html">국민건강보험자료 공유서비스</a>
-								<a href="./notice_board/index.html">국민건강보험공단 인재개발원</a>
-								<a href="./notice_board/index.html">국민건강보험공단 전문도서관</a>
-								<a href="./notice_board/index.html">국민건강보험공단 공단가족</a>
-							</div>
-
-							<p>
-								<button type="button">내부관련사이트</button>
-
-							</p>
-
-							<div class="box-site">
-
-							</div><a class="btn-move">이동</a>
-						</div>
-
-						<div class="family-site-area">
-							<div class="dropdown-content scroll">
-								<a href="./notice_board/index.html">서울요양원</a>
-								<a href="./notice_board/index.html">일산병원</a>
-								<a href="./notice_board/index.html">행정정보공동이용센터</a>
-								<a href="./notice_board/index.html">국민연금</a>
-								<a href="./notice_board/index.html">근로복지공단</a>
-								<a href="./notice_board/index.html">보건복지부</a>
-								<a href="../notice_board/index.html">국민권익위원회</a>
-								<a href="./notice_board/index.html">인터넷 지로납부</a>
-								<a href="./notice_board/index.html">건강보험심사평가원</a>
-								<a href="./notice_board/index.html">정부24</a>
-								<a href="./notice_board/index.html">대한민국 법원 전자가족관계</a>
-								<a href="./notice_board/index.html">보건복지부 인터넷채팅상담</a>
-								<a href="./notice_board/index.html">보건복지부 통계포털</a>
-								<a href="./notice_board/index.html">한국사회보장정보원</a>
-								<a href="./notice_board/index.html">고용보험 인터넷서비스</a>
-								<a href="../notice_board/index.html">고용산재보험 토탈서비스</a>
-								<a href="./notice_board/index.html">한국보건의료연구원</a>
-								<a href="./notice_board/index.html">한국의료분쟁조정중재원</a>
-								<a href="./notice_board/index.html">하이코리아</a>
-								<a href="./notice_board/index.html">국민건강보험 동우회</a>
-								<a href="./notice_board/index.html">4대사회보험 정보연계센터</a>
-								<a href="./notice_board/index.html">행정안전부 국민재난안전포털</a>
-							</div>
-							<p>
-								<button type="button">관련사이트</button>
-							</p>
-
-							<div class="box-site">
-
-							</div><a class="btn-move">이동</a>
-						</div>
-					</div>
-				</div>
-				<div class="txt-sns-area cf ">
-					<div class="footer-txt fl">
-						<p>본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
-						<p>26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시 </p>
-						<p>Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
-					</div>
-					<div class="footer-icon fr">
-						<ul class="certification-list cf">
-							<li class="fl">
-								<a href="./notice_board/index.html">평생건강 With You</a>
-							</li>
-							<li class="fl">
-								<a href="./notice_board/index.html">개인정보보호 우수 웹·시스템</a>
-							</li>
-							<li class="fl">
-								<a href="./notice_board/index.html">정보보호 및 개인정보보호 관리체계(ISMS-P) 인증서 보기</a>
-							</li>
-							<li class="fl">
-								<a href="./notice_board/index.html">(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트
-									인증마크(WA인증마크)</a>
-							</li>
-						</ul>
-						<ul class="sns-link cf">
-							<li class="fl"><a class="naver" href="./notice_board/index.html">네이버 블로그</a></li>
-							<li class="fl"><a class="daum" href="./notice_board/index.html">다음 블로그</a></li>
-							<li class="fl"><a class="facebook" href="./notice_board/index.html">페이스북</a></li>
-							<li class="fl"><a class="kakao" href="./notice_board/index.html">카카오스토리</a></li>
-							<li class="fl"><a class="youtube" href="./notice_board/index.html">유튜브</a></li>
-							<li class="fl"><a class="insta" href="./notice_board/index.html">인스타그램</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<p><a id="back-to-top" href="#top" class="top" >상단으로</a></p>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="./jq.js"></script>
-	</div>
-
-
-</body>
-
+    <script src="./js/detectmobilebrowser.js"></script>
+    <script>
+      if (jQuery.browser.mobile == true) {
+        location.href = './mobile/index.html'
+      }
+    </script>
+  </body>
 </html>
