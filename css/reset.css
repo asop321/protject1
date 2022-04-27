@@ -43,3 +43,36 @@ button{
 ul,ol,li{
 	list-style: none;
 }
+
+
+
+
+
+
+#brandVisual{position: relative;width: 410px;overflow: hidden;height: 140px;}
+#brandVisual .visual_slide li a{display: block; text-indent:-9999px;}
+#brandVisual .visual_slide{width: 100%; }
+#brandVisual .visual_slide li{position:absolute;background-repeat: no-repeat;background-position:0 0;width:100%;height:114px;display: block;}
+#brandVisual .visual_0{background-image:url(../img/banner/banner1.png);}
+#brandVisual .visual_1{background-image:url(../img/banner/banner2.jpeg);}
+#brandVisual .visual_2{background-image:url(../img/banner/banner3.png);}
+#brandVisual .visual_3{background-image:url(../img/banner/banner4.png);}
+#brandVisual .visual_4{background-image:url(../img/banner/banner5.png);}
+#brandVisual .visual_5{background-image:url(../img/banner/banner6.png);}
+#brandVisual .visual_6{background-image:url(../img/banner/banner7.png);}
+#brandVisual .visual_7{background-image:url(../img/banner/\ banner8.png);}
+#brandVisual .visual_8{background-image:url(../img/banner/banner9.png);}
+#brandVisual .visual_9{background-image:url(../img/banner/banner10.png);}
+#brandVisual .visual_10{background-image:url(../img/banner/banner11.png);}
+#brandVisual .visual_11{background-image:url(../img/banner/banner12.png);}
+#brandVisual .visual_12{background-image:url(../img/banner/banner13.png);}
+
+
+
+/* btnImg */
+#brandVisual .btnImg{position:relative; width: 50px; top: 120px; height: 20px; }
+#brandVisual .btnImg img{width: 7px;
+    height: 12px;}
+#brandVisual .btnImg .prev{position: absolute; left: 0; }
+#brandVisual .btnImg .next{position: absolute; right: 0;}
+

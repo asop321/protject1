@@ -72,9 +72,9 @@ a:link, a:visited, a:active {
 	font-size: 21px;
 	color: #3a3a4a;
     margin-bottom: 19px;
-	font-weight: 700;
+	font-weight: 700; 
 }
-/* 상단 펭귄 배경 */
+/* 상단 배경 */
 #wrap:before {
 	height: 400px;
 	top: 0;
@@ -85,7 +85,7 @@ a:link, a:visited, a:active {
 	height: 390px;
 	top: 47px;
 	right: 0;
-	background: url(../img/bg_layout_r.png) no-repeat;
+	background: url(../img/bg_layout_r\ \(1\).png) no-repeat;
 }
 #wrap:before,
 #wrap:after {
@@ -95,6 +95,7 @@ a:link, a:visited, a:active {
 	z-index: 1;
 }
 /* header-top */
+
 #wrap .header .header-top{
 	padding-top: 12px;
 }
@@ -170,6 +171,7 @@ a:link, a:visited, a:active {
 }
 .user-set ul li a{
 	text-decoration: none;
+
 	color: #707377;
 
 }
@@ -355,8 +357,18 @@ a:link, a:visited, a:active {
 #nav:hover .width100  {
 	height: auto;
 	z-index: 13;
-  background: #fff url(../img/gnb-visual.png) no-repeat 23% center;
+  background: #fff /* url(../img/gnb-visual.png) no-repeat 440px center */;
   border-bottom: 1px solid #646262;
+}
+
+#nav:hover .ico{
+	display: block;
+}
+.ico{
+	position: absolute;
+	top:150px;
+	left:21%;
+	display: none;
 }
 .gnb {
 	width: 800px;
@@ -381,6 +393,11 @@ a:link, a:visited, a:active {
 }
 .gnb .depth2 li {
 	padding-top: 10px;
+}
+.gnb li first-child{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .gnb .depth2 li a {
 	font-weight: normal;

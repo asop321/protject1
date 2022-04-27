@@ -90,16 +90,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main-wrap.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  
   </head>
 
   <body>
@@ -225,6 +220,7 @@
           <div class="gnb-nav">
             <div id="nav" tabindex="1">
               <div class="width100">
+                <div class="ico"><img src="./img/gnb-visual.png" alt="" /></div>
                 <div class="inner cf">
                   <h1 class="logo fl">
                     <a href="index.html">
@@ -421,23 +417,25 @@
               </div>
               <a class="search-btn fr" href="#">검색</a>
             </div>
-            <div class="notice fr">
-              <img
-                src="img/banner/main-banner1.png"
-                alt="배너"
-                width="410"
-                id="Banner"
-              />
-              <span class="fl">
-                <em>1</em>
-                /
-                <em>11</em>
-              </span>
-
-              <div class="controls fl">
-                <a class="prev" href="#prev" onclick="prevBanner();">Prev</a>
-                <a class="stop" href="#">stop</a>
-                <a class="next" href="#next" onclick="nextBanner();">Next</a>
+            <div id="brandVisual" class="fr">
+              <ul class="visual_slide">
+                <li class="visual_0"><a href="#">배너이미지1</a></li>
+                <li class="visual_1"><a href="#">배너이미지2</a></li>
+                <li class="visual_2"><a href="#">배너이미지3</a></li>
+                <li class="visual_3"><a href="#">배너이미지4</a></li>
+                <li class="visual_4"><a href="#">배너이미지5</a></li>
+                <li class="visual_5"><a href="#">배너이미지6</a></li>
+                <li class="visual_6"><a href="#">배너이미지7</a></li>
+                <li class="visual_7"><a href="#">배너이미지8</a></li>
+                <li class="visual_8"><a href="#">배너이미지9</a></li>
+                <li class="visual_9"><a href="#">배너이미지10</a></li>
+                <li class="visual_10"><a href="#">배너이미지11</a></li>
+                <li class="visual_11"><a href="#">배너이미지12</a></li>
+                <li class="visual_12"><a href="#">배너이미지13</a></li>
+              </ul>
+              <div class="btnImg">
+                <img src="./img/arrow-prev.png" alt="left" class="prev" />
+                <img src="./img/arrow-next.png" alt="right" class="next" />
               </div>
             </div>
           </div>
@@ -448,16 +446,16 @@
               <div class="visitor-title cf">
                 <div class="title fl"><strong>방문자별 맞춤 메뉴</strong></div>
                 <span class="visitor-btn cf">
-                  <button type="button" class="on fl">개인</button>
-                  <button type="button" class="on2 fl">사업장</button>
+                  <button type="button" class="on btn1 before fl">개인</button>
+                  <button type="button" class="on2 btn2 fl">사업장</button>
                 </span>
               </div>
-              <div class="visitor-icon cf">
+              <div class="visitor-icon visitor-icon1 cf">
                 <ul class="fl">
                   <li>
                     <a href="./notice_board/index.html">
                       <span>
-                        <img src="img/ico-qualification.png" alt="아이콘1" />
+                        <img src="img/ico-qualification1.png" alt="아이콘1" />
                       </span>
 
                       <p>
@@ -581,21 +579,176 @@
                   </li>
                 </ul>
               </div>
+              <div class="visitor-icon visitor-icon2 cf">
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img
+                          src="img/icon2/20220218_event_pc01.png"
+                          alt="아이콘1"
+                        />
+                      </span>
+
+                      <p>
+                        사업장
+                        <br />
+                        직원조회
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/icon2/ico-inform.png" alt="아이콘2" />
+                      </span>
+                      <p>
+                        사업장
+                        <br />
+                        적용통보서
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img
+                          src="img/icon2/ico-amount-money.png"
+                          alt="아이콘3"
+                        />
+                        <em>타 사이트 이동</em>
+                      </span>
+                      <p>
+                        보험료
+                        <br />
+                        고지내역조회
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/icon2/ico-insurance.png" alt="아이콘4" />
+                        <em>타 사이트 이동</em>
+                      </span>
+                      <p>
+                        보험료
+                        <br />
+                        고지납부현황
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img
+                          src="img/icon2/ico-insurance-payment.png"
+                          alt="아이콘5"
+                        />
+                        <em>타 사이트 이동</em>
+                      </span>
+                      <p>
+                        4대보험
+                        <br />
+                        완납증명서
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img src="img/icon2/ico-edi.png" alt="아이콘6" />
+                        <em>타 사이트 이동</em>
+                      </span>
+                      <p>
+                        건강보험
+                        <br />
+                        납부확인서
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img
+                          src="img/icon2/ico-company-form.png"
+                          alt="아이콘7"
+                        />
+                        <em>타 사이트 이동</em>
+                      </span>
+                      <p>
+                        연금
+                        <br />
+                        납부확인서
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img
+                          src="img/icon2/ico-company-certificate.png"
+                          alt="아이콘8"
+                        />
+                        <em>타 사이트 이동</em>
+                      </span>
+                      <p>
+                        증명서 발급
+                        <br />
+                        사실확인
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fl">
+                  <li>
+                    <a href="./notice_board/index.html">
+                      <span>
+                        <img
+                          src="img/icon2/ico-company-inquiry.png"
+                          alt="아이콘9"
+                        />
+                        <em>타 사이트 이동</em>
+                      </span>
+
+                      <p>
+                        보험료
+                        <br />
+                        산출내역신청
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
         <div class="banner">
           <div class="inner cf">
-            <div class="slides-banner cf">
-              <span class="fl">
+            <div class="slides-banner ">
+              <span >
                 <em>1</em>
                 /
                 <em>2</em>
               </span>
-              <a class="stop2 fl" href="#">stop</a>
+            
             </div>
             <div class="slideWrap text-controls">
-              <div >
+              <div>
                 <ul class="main-banner">
                   <li>
                     <p class="slogan">2021년도 국가건강검진</p>
@@ -748,24 +901,44 @@
                     <div class="level-1">
                       <div class="state">
                         <strong>관심</strong>
-                        <p>52</p>
                       </div>
                     </div>
-                    <button type="button" class="fl btn-h">감기</button>
+                    <button type="button" class="fl btn-h-1">감기</button>
                   </li>
                   <li>
-                    <button type="button" class="fl btn-h">눈병</button>
+                    <div class="level-2">
+                      <div class="state">
+                        <strong>관심</strong>
+                      </div>
+                    </div>
+                    <button type="button" class="fl btn-h-2">눈병</button>
                   </li>
                   <li>
-                    <button type="button" class="fl btn-h btn-on">
+                    <div class="level-3">
+                      <div class="state">
+                        <strong>관심</strong>
+                        <p>37</p>
+                      </div>
+                    </div>
+                    <button type="button" class="fl btn-h-3">
                       식중독
                     </button>
                   </li>
                   <li>
-                    <button type="button" class="fl btn-h">천식</button>
+                    <div class="level-4">
+                      <div class="state">
+                        <strong>위험</strong>
+                      </div>
+                    </div>
+                    <button type="button" class="fl btn-h-4">천식</button>
                   </li>
                   <li>
-                    <button type="button" class="fl btn-h">피부염</button>
+                    <div class="level-5">
+                      <div class="state">
+                        <strong>관심</strong>
+                      </div>
+                    </div>
+                    <button type="button" class="fl btn-h-5">피부염</button>
                   </li>
                 </ul>
               </div>
@@ -798,7 +971,7 @@
             </div>
             <div class="banner-zone2 fl">
               <p class="p-title">홍보존</p>
-              <div class="slideWrap controls">
+              <div class="slideWrap2 controls">
                 <div class="control-slider">
                   <img src="./img/img/img1.png" alt="img1" />
                   <img src="./img/img/img2.png" alt="img2" />
@@ -981,8 +1154,8 @@
                 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.
               </p>
               <p>
-                26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터
-                :1577-1000(발신자 부담) 업무시간 : 09시~18시
+                43902 강원도 원주시 하남로 32(제일동) 국민건강보험공단 고객센터
+                :1597-3000(발신자 부담) 업무시간 : 09시~18시
               </p>
               <p>
                 Copyright @ 2020 by National Health Insurance Service. All
@@ -1042,6 +1215,7 @@
                 </li>
               </ul>
             </div>
+            <a href="https://validator.w3.org/check?uri=asop950411.dothome.co.kr/protject/protject1/"><img src="http://www.w3.org/Icons/valid-html401-blue.png" alt=""></a>
           </div>
         </div>
         <p><a id="back-to-top" href="#top" class="top">상단으로</a></p>
@@ -1055,12 +1229,13 @@
     <script src="./js/detectmobilebrowser.js"></script>
     <script>
       if (jQuery.browser.mobile == true) {
-        location.href = './mobile/index.html'
+        location.href = 'mobile/index.html'
       }
     </script>
     <!-- 바닐라 script -->
     <script src="js/toggle_button.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/topbtn_jq.js"></script>
+    <script src="./10_slider/js/script.js"></script>
   </body>
 </html>
