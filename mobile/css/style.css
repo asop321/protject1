@@ -1,4 +1,4 @@
-@charset "UTF-8";
+  @charset "UTF-8";
 
 #wrap {
   width: 414px;
@@ -589,7 +589,7 @@ display: flex;
 }
  /* footer */
  #footer {
- height: 500px;
+padding-bottom: 70px;
   background-color: #f6f6f6;
 }
 #footer .inner{
@@ -668,6 +668,8 @@ display: flex;
     display: inline-block;
     position: relative;
     width:100%;
+  top: 20PX;
+
 }
 .family-link .family-site-area p {
     overflow: hidden;
@@ -737,6 +739,10 @@ box-site {
 }
 #footer .certification-list{
 	list-style: none;
+  
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 90px;
 }
 #footer .footer-icon ul.certification-list li{
 	margin: 0px 10px;
@@ -765,15 +771,17 @@ box-site {
 	width: 55px;
 	height: 38px;
 }
-#footer .txt-sns-area .sns-link{
-	margin-left: 5px;
+
+#footer .sns-link {
+  margin: 0 auto;
+  width: 300px;
 }
-#footer .txt-sns-area .sns-link li{
+#footer .sns-link li{
 	list-style: none;
 	margin-top: 15px;
 	padding: 0px 8px;
 }
-#footer .txt-sns-area .sns-link li a {
+#footer .sns-link li a {
     display: block;
     width: 32px;
     height: 32px;
@@ -783,22 +791,26 @@ box-site {
     background-position: 50% 50%;
     text-indent: -9999px;
 }
-#footer .txt-sns-area .sns-link li a.naver {
+#footer .sns-link li a.naver {
     background-image: url(../../img/ico-naver-small.png);
 }
-#footer .txt-sns-area .sns-link li a.daum {
+#footer .sns-link li a.daum {
     background-image: url(../../img/ico-daum-small.png);
 }
-#footer .txt-sns-area .sns-link li a.facebook {
+#footer .sns-link li a.facebook {
     background-image: url(../../img/ico-facebook-small.png);
 }
-#footer .txt-sns-area .sns-link li a.kakao {
+#footer .sns-link li a.kakao {
     background-image: url(../../img/ico-kakao-small.png);
 }
-#footer .txt-sns-area .sns-link li a.youtube {
+#footer .sns-link li a.youtube {
     background-image: url(../../img/ico-youtube-small.png);
 }
-#footer .txt-sns-area .sns-link li a.insta {
+#footer .sns-link li a.insta {
     background-image: url(../../img/ico-insta-small.png);
 }
-
+#footer .footer-text{
+  font-size: 12.5px;
+  width: 360px;
+  margin: 15px auto;
+}
