@@ -40,45 +40,54 @@ btn1.click(function () {
 
 /* 국민건강알람서비스 */
 $(".btn-h-1").click(function(){
-  $(".graph ul li div.level-1").show();
-  $(".graph ul li div.level-2").removeClass("on");
-  $(".graph ul li div.level-3").removeClass("on");
-  $(".graph ul li div.level-4").removeClass("on");
-  $(".graph ul li div.level-5").removeClass("on");
+  $(".graph ul li div").removeClass("on");
+  $(".graph ul li div.level-1").addClass("on");
+  $(".graph ul li div .state").hide();
+  $(".graph ul li div .state1").show();
+
 });
 $(".btn-h-2").click(function(){
+  $(".graph ul li div").removeClass("on");
   $(".graph ul li div.level-2").addClass("on");
-  $(".graph ul li div.level-1").hide();
-  $(".graph ul li div.level-3").removeClass("on");
-  $(".graph ul li div.level-4").removeClass("on");
-  $(".graph ul li div.level-5").removeClass("on");
-
+  $(".graph ul li div .state").hide();
+  $(".graph ul li div .state2").show();
 
 });
 $(".btn-h-3").click(function(){
+  $(".graph ul li div").removeClass("on");
   $(".graph ul li div.level-3").addClass("on");
-  $(".graph ul li div.level-1").hide();
-  $(".graph ul li div.level-2").removeClass("on");
-  $(".graph ul li div.level-4").removeClass("on");
-  $(".graph ul li div.level-5").removeClass("on");
+  $(".graph ul li div .state").hide();
+  $(".graph ul li div .state3").show();
 
 });
 $(".btn-h-4").click(function(){
+  $(".graph ul li div").removeClass("on");
   $(".graph ul li div.level-4").addClass("on");
-  $(".graph ul li div.level-1").hide();
-  $(".graph ul li div.level-2").removeClass("on");
-  $(".graph ul li div.level-3").removeClass("on");
-  $(".graph ul li div.level-5").removeClass("on");
+  $(".graph ul li div .state").hide();
+  $(".graph ul li div .state4").show();
 
 });
+
 $(".btn-h-5").click(function(){
+  $(".graph ul li div").removeClass("on");
   $(".graph ul li div.level-5").addClass("on");
-  $(".graph ul li div.level-1").hide();
-  $(".graph ul li div.level-2").removeClass("on");
-  $(".graph ul li div.level-3").removeClass("on");
-  $(".graph ul li div.level-4").removeClass("on");
+  $(".graph ul li div .state").hide();
+  $(".graph ul li div .state5").show();
 
 });
 
 
 
+/* 셋인터벌 */
+
+$(function(){
+  var idx = 0;
+  setInterval(time, 1000);
+  function time(){
+    var box = $('.main-policy dl dd a p');
+    box.removeClass('on');
+    box.eq(idx).addClass('on');
+    idx++;
+    if(idx >= box.length) idx= 0;
+  }
+});

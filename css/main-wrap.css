@@ -429,7 +429,8 @@
 	letter-spacing: -1px;
 	margin-bottom: 10px;	
 }
-.main-policy p.p-on{
+.main-policy p.on{
+    transition: all 0.7s;
 	font-size: 24px;
 	font-weight: 700;
 	background: url(../img/bg-dummy.png) repeat-x left 10px;
@@ -560,7 +561,7 @@
     margin-left:2%;
 }
 
-.health-state .graph ul li .level-1 .btn-h-1.on{
+.health-state .graph ul li .level-1.on+.btn-h-1{
     background-color: #44465c;
     color: #fff;
     border-color: #44465c;
@@ -585,45 +586,32 @@
     color: #fff;
     border-color: #44465c;
 }
-.health-state .graph ul li .level-1.on{
-    display:block;
-}
-.health-state .graph ul li .level-2.on{
-    display:block;
-}
-.health-state .graph ul li .level-3.on{
-    display:block;
-}
-.health-state .graph ul li .level-4.on{
-    display:block;
-}
-.health-state .graph ul li .level-5.on{
-    display:block;
-}
 
-.health-state .graph ul li div.level-1{
+
+
+.health-state .graph ul li div.level-1 .state1{
     background: url(../img/bg-health-noti-1.png) no-repeat;
-    display: block;
+    display: none;
     
 }
 
-.health-state .graph ul li div.level-2{
+.health-state .graph ul li div.level-2 .state2{
     background: url(../img/bg-health-noti-1.png) no-repeat;
     display: none;
 
 }
-.health-state .graph ul li div.level-3{
+.health-state .graph ul li div.level-3 .state{
     background: url(../img/bg-health-noti-1.png) no-repeat;
-    display: none;
+    display: block;
 
 }
-.health-state .graph ul li div.level-4{
+.health-state .graph ul li div.level-4 .state4{
     background: url(../img/bg-health-noti-4.png) no-repeat;
     display: none;
 
 
 }
-.health-state .graph ul li div.level-5{
+.health-state .graph ul li div.level-5 .state5{
     background: url(../img/bg-health-noti-1.png) no-repeat;
     display: none;
 
