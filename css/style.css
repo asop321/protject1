@@ -74,26 +74,7 @@ a:link, a:visited, a:active {
     margin-bottom: 19px;
 	font-weight: 700; 
 }
-/* 상단 배경 */
-#wrap:before {
-	height: 400px;
-	top: 0;
-	left: 0;
-	background: url(../img/bg_layout_l.png) no-repeat;
-}
-#wrap:after {
-	height: 390px;
-	top: 47px;
-	right: 0;
-	background: url(../img/bg_layout_r\ \(1\).png) no-repeat;
-}
-#wrap:before,
-#wrap:after {
-	width: 170px;
-	content: "";
-	position: absolute;
-	z-index: 1;
-}
+
 /* header-top */
 
 #wrap .header .header-top{
